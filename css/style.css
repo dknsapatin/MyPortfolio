@@ -11,9 +11,14 @@
 .header__secondName {
   margin-left: 16rem; }
 
-.header__navigation-navlist {
+.header__navigation {
   display: flex;
-  list-style: none; }
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.header .navigation > * {
+  flex-shrink: 1; }
 
 .header__navigation-navitem {
   font-size: 1.2rem;
@@ -21,8 +26,16 @@
   transition: all 0.2s;
   cursor: pointer; }
 
-.header__navigation-navitem:not(:last-child) {
-  margin-right: 20rem; }
+.about__primary {
+  font-size: 2.5rem;
+  letter-spacing: 2.5rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  text-align: center; }
+
+.about__secondary {
+  font-size: 1.5rem;
+  padding: 2rem; }
 
 .btn-text:link, .btn-text:visited {
   display: inline-block;
@@ -34,26 +47,26 @@
 
 .btn-text:hover {
   /* When hovering the button */
-  transform: translateY(-0.3rem);
   letter-spacing: 0.2rem; }
-
-.btn-text:active {
-  /* When clicking the button */
-  transform: translateY(-0.1rem);
-  border-radius: 90px;
-  padding: 0.1rem 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(50, 48, 49, 0.2); }
 
 .header {
   height: 95vh;
   width: 100%;
   position: relative;
-  background-color: #f5f6f4; }
+  border-bottom: 0.2px solid #777; }
   .header__name-box {
     position: absolute;
     top: 45%;
     left: 30%;
     transform: translate(-50%, -50%); }
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about__container {
+    padding: 8rem 0 40rem 0;
+    margin: 0 60rem 0 60rem; }
 
 * {
   margin: 0;

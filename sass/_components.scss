@@ -18,19 +18,35 @@
   }
 
   &__navigation {
-  }
-  &__navigation-navlist {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+  .navigation > * {
+    flex-shrink: 1;
+  }
+
   &__navigation-navitem {
     font-size: 1.2rem;
     animation: moveInUp 0.8s 0.1s;
     transition: all 0.2s;
     cursor: pointer;
   }
-  &__navigation-navitem:not(:last-child) {
-    margin-right: 20rem;
+}
+
+// About ME
+.about {
+  &__primary {
+    font-size: 2.5rem;
+    letter-spacing: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  &__secondary {
+    font-size: 1.5rem;
+    padding: 2rem;
   }
 }
 
@@ -49,16 +65,7 @@
 
   &:hover {
     /* When hovering the button */
-    transform: translateY(-0.3rem);
     letter-spacing: 0.2rem;
     // box-shadow: 0 1rem 2rem rgba(#323031, 0.2);
-  }
-
-  &:active {
-    /* When clicking the button */
-    transform: translateY(-0.1rem);
-    border-radius: 90px;
-    padding: 0.1rem 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(#323031, 0.2);
   }
 }
