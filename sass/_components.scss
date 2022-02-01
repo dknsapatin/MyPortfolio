@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 6rem;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     text-transform: uppercase;
@@ -28,7 +28,7 @@
   }
 
   &__navigation-navitem {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     animation: moveInUp 0.8s 0.1s;
     transition: all 0.2s;
     cursor: pointer;
@@ -38,15 +38,39 @@
 // About ME
 .about {
   &__primary {
-    font-size: 2.5rem;
-    letter-spacing: 2.5rem;
-    padding: 2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 2.3rem;
+    padding: 0 2rem 0 2rem;
     margin-bottom: 5rem;
     text-align: center;
+
+    // background-image: linear-gradient(to right, #ffe030, #ffb900);
+    // color: transparent;
+    // -webkit-background-clip: text;
   }
   &__secondary {
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 0 2rem 0 2rem;
+    letter-spacing: 0.3rem;
+    &-intro {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 5rem;
+      margin-bottom: 2rem;
+
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    &-description {
+      font-size: 2rem;
+      letter-spacing: 0.3rem;
+      line-height: 5rem;
+      margin-bottom: 3rem;
+    }
   }
 }
 
