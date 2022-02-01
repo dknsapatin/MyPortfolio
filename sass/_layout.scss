@@ -1,0 +1,13 @@
+.header {
+  height: 95vh;
+  width: 100%;
+  position: relative;
+  background-color: #f5f6f4;
+
+  &__name-box {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+}
