@@ -45,6 +45,8 @@
     margin-bottom: 5rem;
     text-align: center;
 
+    transition: all 0.2s;
+
     // background-image: linear-gradient(to right, #ffe030, #ffb900);
     // color: transparent;
     // -webkit-background-clip: text;
@@ -53,6 +55,7 @@
     font-size: 1.5rem;
     padding: 0 2rem 0 2rem;
     letter-spacing: 0.3rem;
+
     &-intro {
       text-align: center;
       font-size: 2rem;
@@ -70,6 +73,40 @@
       letter-spacing: 0.3rem;
       line-height: 5rem;
       margin-bottom: 3rem;
+    }
+  }
+}
+
+// Technologies
+
+.technologies {
+  &__primary {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 2.3rem;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card {
+    border: solid 2px black;
+  }
+  &__box {
+    background-color: blanchedalmond;
+    padding: 2rem;
+    &-icon {
+      margin-bottom: 3rem;
+      background-color: white;
+      padding: 10rem;
+    }
+    &-description {
+      background-color: white;
+      padding: 10rem;
     }
   }
 }
