@@ -65,20 +65,29 @@
 .technologies__container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: 8rem; }
 
 .technologies__card {
-  border: solid 2px black; }
+  border: solid 1px #777;
+  border-radius: 2px; }
 
 .technologies__box {
-  background-color: blanchedalmond;
-  padding: 2rem; }
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
   .technologies__box-icon {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     background-color: white;
-    padding: 10rem; }
+    padding: 1rem;
+    -webkit-background-clip: text; }
+    .technologies__box-icon-logo {
+      width: 50%;
+      height: 100%; }
   .technologies__box-description {
-    background-color: white;
+    background-color: #bfbfbf;
     padding: 10rem; }
 
 .btn-text:link, .btn-text:visited {
@@ -114,7 +123,7 @@
     margin: 0 70rem 0 70rem; }
 
 .technologies {
-  margin-top: 15rem; }
+  margin: 15rem 0 15rem 0; }
 
 * {
   margin: 0;

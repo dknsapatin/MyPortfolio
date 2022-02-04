@@ -92,20 +92,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8rem;
   }
   &__card {
-    border: solid 2px black;
+    border: solid 1px #777;
+    border-radius: 2px;
   }
   &__box {
-    background-color: blanchedalmond;
-    padding: 2rem;
+    background-color: rgba(#fff, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 2rem 4rem rgba(#000000, 0.15);
     &-icon {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       background-color: white;
-      padding: 10rem;
+      padding: 1rem;
+      -webkit-background-clip: text;
+
+      &-logo {
+        width: 50%;
+        height: 100%;
+      }
     }
     &-description {
-      background-color: white;
+      background-color: rgb(191, 191, 191);
       padding: 10rem;
     }
   }
