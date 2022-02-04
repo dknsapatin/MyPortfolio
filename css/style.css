@@ -29,15 +29,15 @@
 .about__primary {
   font-size: 3.5rem;
   font-weight: 500;
-  letter-spacing: 2.3rem;
+  letter-spacing: 1.7rem;
   padding: 0 2rem 0 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
   text-align: center;
   transition: all 0.2s; }
 
 .about__secondary {
-  font-size: 1.5rem;
-  padding: 0 2rem 0 2rem;
+  font-size: 1rem;
+  padding: 0 35rem;
   letter-spacing: 0.3rem; }
   .about__secondary-intro {
     text-align: center;
@@ -57,38 +57,36 @@
 .technologies__primary {
   font-size: 3.5rem;
   font-weight: 500;
-  letter-spacing: 2.3rem;
+  letter-spacing: 1.7rem;
   padding: 0 2rem 0 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   text-align: center; }
 
-.technologies__container {
+.technologies__box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8rem; }
-
-.technologies__card {
-  border: solid 1px #777;
-  border-radius: 2px; }
-
-.technologies__box {
-  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
   font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
-  .technologies__box-icon {
-    margin-bottom: 1rem;
-    background-color: white;
-    padding: 1rem;
-    -webkit-background-clip: text; }
-    .technologies__box-icon-logo {
-      width: 50%;
-      height: 100%; }
+  padding: 3.5rem 3rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s; }
+  .technologies__box-logo {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 15rem;
+    height: 100%; }
+  .technologies__box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
   .technologies__box-description {
-    background-color: #bfbfbf;
-    padding: 10rem; }
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #777;
+    font-weight: 400; }
 
 .btn-text:link, .btn-text:visited {
   display: inline-block;
@@ -117,13 +115,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.2px solid #777; }
+  margin: 15rem 0 25rem 0; }
   .about__container {
-    padding: 20rem 0 40rem 0;
-    margin: 0 70rem 0 70rem; }
+    margin: 0 auto; }
 
 .technologies {
   margin: 15rem 0 15rem 0; }
+  .technologies__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem; }
 
 * {
   margin: 0;

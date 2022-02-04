@@ -40,9 +40,9 @@
   &__primary {
     font-size: 3.5rem;
     font-weight: 500;
-    letter-spacing: 2.3rem;
+    letter-spacing: 1.7rem;
     padding: 0 2rem 0 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     text-align: center;
 
     transition: all 0.2s;
@@ -52,8 +52,8 @@
     // -webkit-background-clip: text;
   }
   &__secondary {
-    font-size: 1.5rem;
-    padding: 0 2rem 0 2rem;
+    font-size: 1rem;
+    padding: 0 35rem;
     letter-spacing: 0.3rem;
 
     &-intro {
@@ -83,41 +83,48 @@
   &__primary {
     font-size: 3.5rem;
     font-weight: 500;
-    letter-spacing: 2.3rem;
+    letter-spacing: 1.7rem;
     padding: 0 2rem 0 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     text-align: center;
   }
-  &__container {
+
+  &__box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
-  }
-  &__card {
-    border: solid 1px #777;
-    border-radius: 2px;
-  }
-  &__box {
-    background-color: rgba(#fff, 0.8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    text-align: center;
-    box-shadow: 0 2rem 4rem rgba(#000000, 0.15);
-    &-icon {
-      margin-bottom: 1rem;
-      background-color: white;
-      padding: 1rem;
-      -webkit-background-clip: text;
 
-      &-logo {
-        width: 50%;
-        height: 100%;
-      }
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 3.5rem 3rem;
+
+    box-shadow: 0 2rem 3rem rgba(#000000, 0.15);
+    background-color: rgba(#fff, 0.8);
+
+    transition: all 0.3s;
+    // background-color: #777;
+
+    &-logo {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      width: 15rem;
+      height: 100%;
+      // background-color: antiquewhite;
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
     }
     &-description {
-      background-color: rgb(191, 191, 191);
-      padding: 10rem;
+      justify-content: center;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      color: #777;
+      font-weight: 400;
+      // background-color: aqua;
     }
   }
 }
