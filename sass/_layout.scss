@@ -1,8 +1,9 @@
 .header {
-  height: 95vh;
+  height: 97vh;
   width: 100%;
   position: relative;
   border-bottom: 0.2px solid #777;
+  background-color: #bbeaf1;
   &__name-box {
     position: absolute;
     top: 45%;
@@ -12,14 +13,26 @@
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15rem 0 25rem 0;
+  margin-bottom: 50rem;
+  &__main {
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  &__container {
-    // background-color: #eee8aa;
-    margin: 0 auto;
+  &__container--1 {
+    margin: 0 50rem;
+    // border: solid 2px white;
+  }
+  &__container--2 {
+    padding: 5rem;
+    margin-right: 20rem;
+    // border: solid 2px white;
+    img {
+      border-radius: 0.5rem;
+      height: 50rem;
+    }
   }
 }
 
