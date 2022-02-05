@@ -51,7 +51,7 @@
 
 .navigation {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 3rem;
   margin-bottom: 25rem;
   text-transform: uppercase;
 
@@ -65,41 +65,9 @@
 
 // About ME
 .about {
-  &__primary {
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: 1.7rem;
-    padding: 0 2rem 0 2rem;
-    margin-bottom: 7rem;
-    text-align: center;
-  }
-  &__secondary {
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-
-    &-intro {
-      text-align: center;
-      font-size: 2rem;
-      line-height: 5rem;
-      margin-bottom: 2rem;
-
-      span {
-        font-size: 2rem;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-    }
-    &-description {
-      font-size: 2rem;
-      letter-spacing: 0.3rem;
-      line-height: 5rem;
-      margin-bottom: 3rem;
-    }
-  }
 }
 
 // Technologies
-
 .technologies {
   &__primary {
     font-size: 3.5rem;

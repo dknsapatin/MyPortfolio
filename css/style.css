@@ -15,39 +15,13 @@
 
 .navigation {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 3rem;
   margin-bottom: 25rem;
   text-transform: uppercase;
   justify-content: space-around; }
   .navigation-navitem {
     font-size: 1.5rem;
     letter-spacing: 1rem; }
-
-.about__primary {
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 1.7rem;
-  padding: 0 2rem 0 2rem;
-  margin-bottom: 7rem;
-  text-align: center; }
-
-.about__secondary {
-  font-size: 1rem;
-  letter-spacing: 0.3rem; }
-  .about__secondary-intro {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 5rem;
-    margin-bottom: 2rem; }
-    .about__secondary-intro span {
-      font-size: 2rem;
-      font-weight: 600;
-      text-transform: uppercase; }
-  .about__secondary-description {
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-    line-height: 5rem;
-    margin-bottom: 3rem; }
 
 .technologies__primary {
   font-size: 3.5rem;
@@ -84,7 +58,7 @@
     font-weight: 400; }
 
 .header {
-  height: 97vh;
+  height: 96vh;
   width: 100%;
   position: relative;
   border-bottom: 0.2px solid #777;
@@ -96,28 +70,35 @@
     transform: translate(-50%, -50%); }
 
 .about {
-  margin-bottom: 50rem; }
-  .about__main {
-    margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ebfffe;
+  padding: 7rem; }
+  .about__header {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .about__left-container {
+    flex: 0 0 40%;
+    padding: 10rem; }
+    .about__left-container p {
+      font-size: 2.5rem;
+      padding: 2.25rem;
+      letter-spacing: 0.5rem; }
+  .about__right-container {
+    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center; }
-  .about__container--1 {
-    margin: 0 50rem; }
-  .about__container--2 {
-    padding: 5rem;
-    margin-right: 20rem; }
-    .about__container--2 img {
-      border-radius: 0.5rem;
-      height: 50rem; }
+    justify-content: center; }
+    .about__right-container img {
+      width: 50%;
+      border-radius: 50%; }
 
-.technologies {
-  margin: 15rem 0 15rem 0; }
-  .technologies__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem; }
+.technologies__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem; }
 
 * {
   margin: 0;

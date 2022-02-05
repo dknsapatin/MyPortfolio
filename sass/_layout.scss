@@ -1,5 +1,5 @@
 .header {
-  height: 97vh;
+  height: 96vh;
   width: 100%;
   position: relative;
   border-bottom: 0.2px solid #777;
@@ -12,32 +12,43 @@
   }
 }
 
+// About Section
 .about {
-  margin-bottom: 50rem;
-  &__main {
-    margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ebfffe;
+  padding: 7rem;
+
+  &__header {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &__left-container {
+    flex: 0 0 40%;
+    padding: 10rem;
+
+    p {
+      font-size: 2.5rem;
+      padding: 2.25rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+  &__right-container {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
 
-  &__container--1 {
-    margin: 0 50rem;
-    // border: solid 2px white;
-  }
-  &__container--2 {
-    padding: 5rem;
-    margin-right: 20rem;
-    // border: solid 2px white;
     img {
-      border-radius: 0.5rem;
-      height: 50rem;
+      width: 50%;
+      border-radius: 50%;
     }
   }
 }
 
+// Technology section
 .technologies {
-  margin: 15rem 0 15rem 0;
   &__container {
     display: flex;
     justify-content: center;
