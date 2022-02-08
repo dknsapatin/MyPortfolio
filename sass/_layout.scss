@@ -1,15 +1,12 @@
 .header {
-  height: 96vh;
+  height: 100vh;
   width: 100%;
-  position: relative;
   border-bottom: 0.2px solid #777;
   background-color: #bbeaf1;
-  &__name-box {
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // About Section
