@@ -1,8 +1,10 @@
 .header {
   height: 100vh;
   width: 100%;
-  margin-bottom: -5rem;
-  background-color: #bbeaf1;
+  margin-bottom: -6rem;
+
+  // background-color: #bbeaf1;
+  background-image: linear-gradient(to bottom right, #ff6663, #f9c762);
 
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ebfffe;
+  color: #777;
   padding: 0 10rem;
   margin-top: 15rem;
   margin-bottom: 25rem;

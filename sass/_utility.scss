@@ -5,7 +5,7 @@
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: #777;
 
     /* Button Animations */
   }
@@ -19,23 +19,25 @@
 }
 
 .style-icons {
+  width: 45rem;
+  height: 100%;
+  font-weight: 100;
+  opacity: 5%;
+  z-index: -1;
 }
-
-.section-about {
+.main-container {
   position: relative;
-  .icon-1 {
-    position: absolute;
-    top: 0%;
-    left: 10%;
-  }
-  .icon-2 {
-    position: absolute;
-    top: 0%;
-    right: 10%;
-  }
-  .icon-3 {
-    position: absolute;
-    top: 0%;
-    right: 10%;
+  .section-about {
+    .icon-1 {
+      position: absolute;
+      top: -30%;
+      left: 8%;
+    }
+
+    .icon-2 {
+      position: absolute;
+      top: -10%;
+      right: 11%;
+    }
   }
 }
