@@ -1,25 +1,29 @@
 .header {
-  .logo__title {
-    margin: 0 auto;
+  .logo__box {
+    padding: 1rem;
+    margin-bottom: 10rem;
     &-name {
+      display: flex;
+      justify-content: center;
       font-size: 40rem;
       font-weight: 800;
       letter-spacing: 9rem;
+      margin-right: -9rem;
       color: #0a0b0a;
       text-align: center;
     }
   }
 }
 .main-container {
-  background-color: #0a0b0a;
 }
 
-.nav {
+.section-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #0a0b0a;
+
   .nav__links {
     width: 100%;
     display: flex;
@@ -29,44 +33,21 @@
     list-style: none;
   }
   .nav__item {
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 1rem;
   }
 }
 
 // About ME
-.about {
-  &__left-container {
-    flex: 0 0 40%;
-    padding: 10rem;
+.section-about {
+  .about-container {
+    margin: 0 auto;
+    padding: 0 40rem;
 
     p {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       padding: 2.25rem;
-      letter-spacing: 0.5rem;
-    }
-  }
-  &__right-container {
-    flex: 1;
-    display: flex;
-    justify-content: start;
-
-    &__img-container {
-      position: relative;
-    }
-
-    img {
-      width: 40%;
-      border-radius: 50%;
-    }
-    &__caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-transform: uppercase;
-      font-size: 1.7rem;
-      text-align: center;
+      letter-spacing: 0.3rem;
     }
   }
 }
