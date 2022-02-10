@@ -19,25 +19,25 @@
 }
 
 .style-icons {
-  width: 45rem;
+  width: 50rem;
   height: 100%;
   font-weight: 100;
   opacity: 5%;
   z-index: -1;
 }
-.main-container {
+.section-about {
   position: relative;
-  .section-about {
-    .icon-1 {
-      position: absolute;
-      top: -20%;
-      left: 9%;
-    }
+}
+.section-about {
+  .icon-1 {
+    position: absolute;
+    top: -20%;
+    left: 8%;
+  }
 
-    .icon-2 {
-      position: absolute;
-      top: -4%;
-      right: 11%;
-    }
+  .icon-2 {
+    position: absolute;
+    top: 9%;
+    right: 8%;
   }
 }
