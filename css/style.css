@@ -108,8 +108,8 @@
   align-items: center;
   color: #777;
   padding: 0 10rem;
-  margin-top: 15rem;
-  margin-bottom: 25rem; }
+  margin-top: 30rem;
+  margin-bottom: 35rem; }
   .section-about__header {
     font-size: 4.5rem;
     text-align: center;
@@ -160,9 +160,9 @@ body {
   position: relative; }
   .main-container .section-about .icon-1 {
     position: absolute;
-    top: -30%;
-    left: 8%; }
+    top: -20%;
+    left: 9%; }
   .main-container .section-about .icon-2 {
     position: absolute;
-    top: -10%;
+    top: -4%;
     right: 11%; }
