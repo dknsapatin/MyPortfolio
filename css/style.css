@@ -43,15 +43,16 @@
 .technologies__container {
   display: flex;
   flex-direction: column;
-  background-color: bisque; }
+  background-color: inherit; }
 
 .technologies__primary {
-  font-size: 2.5rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.8rem;
   text-align: center;
   margin-bottom: 10rem;
-  padding: 2rem; }
+  padding: 2rem;
+  color: #fff; }
 
 .technologies__cards {
   margin: 0 auto;
@@ -101,16 +102,16 @@
   justify-content: center;
   align-items: center;
   color: #777;
-  padding: 0 10rem;
-  border-bottom: 2px solid #777; }
+  padding: 0 10rem; }
   .section-about__header {
     font-size: 4.5rem;
     text-align: center;
     margin-bottom: 3rem; }
 
 .technologies {
-  background-color: aqua;
-  margin: 25rem auto; }
+  background-image: linear-gradient(to right, #ff99b9, #f3d34a);
+  margin: 0 auto;
+  padding: 15rem 0 25rem 0; }
 
 * {
   margin: 0;
@@ -157,3 +158,22 @@ body {
   position: absolute;
   top: 9%;
   right: 8%; }
+
+.technologies {
+  position: relative; }
+
+.custom-shape-divider-top-1644634079 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; }
+
+.custom-shape-divider-top-1644634079 svg {
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 134px; }
+
+.custom-shape-divider-top-1644634079 .shape-fill {
+  fill: #ffffff; }

@@ -41,3 +41,26 @@
     right: 8%;
   }
 }
+
+// SVG shape divider
+.technologies {
+  position: relative;
+}
+.custom-shape-divider-top-1644634079 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1644634079 svg {
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 134px;
+}
+
+.custom-shape-divider-top-1644634079 .shape-fill {
+  fill: #ffffff;
+}

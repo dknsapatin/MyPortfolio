@@ -20,7 +20,7 @@
   color: #777;
   padding: 0 10rem;
 
-  border-bottom: 2px solid #777;
+  // border-bottom: 2px solid #777;
 
   &__header {
     font-size: 4.5rem;
@@ -31,6 +31,7 @@
 
 // Technology section
 .technologies {
-  background-color: aqua;
-  margin: 25rem auto;
+  background-image: linear-gradient(to right, #ff99b9, #f3d34a);
+  margin: 0 auto;
+  padding: 15rem 0 25rem 0;
 }
