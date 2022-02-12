@@ -10,7 +10,7 @@
     letter-spacing: 9rem;
     margin-right: -9rem;
     color: #fff;
-    opacity: 50%;
+    opacity: 70%;
     text-align: center; }
 
 .section-nav {
@@ -43,17 +43,18 @@
 .technologies__container {
   display: flex;
   flex-direction: column;
-  background-color: inherit; }
+  background-color: inherit;
+  padding: 5rem 0; }
 
 .technologies__primary {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   letter-spacing: 0.8rem;
   text-align: center;
   margin-bottom: 10rem;
   padding: 2rem;
   color: #fff;
-  opacity: 50%; }
+  opacity: 70%; }
 
 .technologies__cards {
   margin: 0 auto;
@@ -113,7 +114,7 @@
 .technologies {
   background-image: linear-gradient(to right, #ff99b9, #f3d34a);
   margin: 0 auto;
-  padding: 15rem 0 25rem 0; }
+  padding: 25rem 0 25rem 0; }
 
 * {
   margin: 0;
@@ -164,7 +165,7 @@ body {
 .technologies {
   position: relative; }
 
-.custom-shape-divider-top-1644638106 {
+.custom-shape-divider-top-1644641047 {
   position: absolute;
   top: 0;
   left: 0;
@@ -172,11 +173,48 @@ body {
   overflow: hidden;
   line-height: 0; }
 
-.custom-shape-divider-top-1644638106 svg {
+.custom-shape-divider-top-1644641047 svg {
   position: relative;
   display: block;
-  width: calc(162% + 1.3px);
-  height: 202px; }
+  width: calc(125% + 1.3px);
+  height: 207px;
+  transform: rotateY(180deg); }
 
-.custom-shape-divider-top-1644638106 .shape-fill {
+.custom-shape-divider-top-1644641047 .shape-fill {
   fill: #ffffff; }
+
+.custom-shape-divider-bottom-1644641071 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg); }
+
+.custom-shape-divider-bottom-1644641071 svg {
+  position: relative;
+  display: block;
+  width: calc(125% + 1.3px);
+  height: 207px;
+  transform: rotateY(180deg); }
+
+.custom-shape-divider-bottom-1644641071 .shape-fill {
+  fill: #ffffff; }
+
+.technologies-container {
+  position: relative; }
+  .technologies-container .tech-icons {
+    width: 50rem;
+    height: 100%;
+    font-weight: 100;
+    opacity: 5%;
+    z-index: -1; }
+  .technologies-container .tech-icon-1 {
+    position: absolute;
+    top: -20%;
+    left: 8%; }
+  .technologies-container .tech-icon-2 {
+    position: absolute;
+    top: 9%;
+    right: 8%; }
