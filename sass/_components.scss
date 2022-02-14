@@ -62,17 +62,20 @@
     display: flex;
     flex-direction: column;
     background-color: inherit;
+    margin: 0 auto;
     padding: 5rem 0;
   }
   &__primary {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
-    letter-spacing: 0.8rem;
-    text-align: center;
-    margin-bottom: 10rem;
-    padding: 2rem;
+    letter-spacing: 0.6rem;
+    // text-align: center;
+    justify-content: start;
+    margin-bottom: 7rem;
+    // padding: 2rem;
+    padding-left: 7rem;
     color: #fff;
-    opacity: 70%;
+    // opacity: 70%;
   }
   &__cards {
     margin: 0 auto;
