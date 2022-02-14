@@ -127,42 +127,62 @@
 
     width: 25rem;
     height: 100%;
-    opacity: 4%;
+    opacity: 3%;
   }
+}
+
+.css {
+  position: relative;
+  overflow: hidden;
   .css__background {
     position: absolute;
-    top: -8rem;
-    left: -10rem;
+    top: 7rem;
+    left: 7rem;
 
     width: 25rem;
     height: 100%;
-    opacity: 4%;
+    opacity: 3%;
   }
+}
+
+.js {
+  position: relative;
+  overflow: hidden;
   .js__background {
     position: absolute;
-    top: -8rem;
-    left: -10rem;
+    top: -3rem;
+    left: 7rem;
 
     width: 25rem;
     height: 100%;
-    opacity: 4%;
+    opacity: 3%;
   }
+}
+
+.sass {
+  position: relative;
+  overflow: hidden;
   .sass__background {
     position: absolute;
-    top: -8rem;
-    left: -10rem;
+    top: 12rem;
+    left: -1.7rem;
 
     width: 25rem;
     height: 100%;
-    opacity: 4%;
+    opacity: 3%;
   }
+}
+
+.react {
+  position: relative;
+  overflow: hidden;
   .react__background {
     position: absolute;
-    top: -8rem;
+    top: 8rem;
     left: -10rem;
 
     width: 25rem;
     height: 100%;
-    opacity: 4%;
+    opacity: 3%;
   }
 }

@@ -234,32 +234,48 @@ body {
     left: -10rem;
     width: 25rem;
     height: 100%;
-    opacity: 4%; }
-  .html .css__background {
+    opacity: 3%; }
+
+.css {
+  position: relative;
+  overflow: hidden; }
+  .css .css__background {
     position: absolute;
-    top: -8rem;
+    top: 7rem;
+    left: 7rem;
+    width: 25rem;
+    height: 100%;
+    opacity: 3%; }
+
+.js {
+  position: relative;
+  overflow: hidden; }
+  .js .js__background {
+    position: absolute;
+    top: -3rem;
+    left: 7rem;
+    width: 25rem;
+    height: 100%;
+    opacity: 3%; }
+
+.sass {
+  position: relative;
+  overflow: hidden; }
+  .sass .sass__background {
+    position: absolute;
+    top: 12rem;
+    left: -1.7rem;
+    width: 25rem;
+    height: 100%;
+    opacity: 3%; }
+
+.react {
+  position: relative;
+  overflow: hidden; }
+  .react .react__background {
+    position: absolute;
+    top: 8rem;
     left: -10rem;
     width: 25rem;
     height: 100%;
-    opacity: 4%; }
-  .html .js__background {
-    position: absolute;
-    top: -8rem;
-    left: -10rem;
-    width: 25rem;
-    height: 100%;
-    opacity: 4%; }
-  .html .sass__background {
-    position: absolute;
-    top: -8rem;
-    left: -10rem;
-    width: 25rem;
-    height: 100%;
-    opacity: 4%; }
-  .html .react__background {
-    position: absolute;
-    top: -8rem;
-    left: -10rem;
-    width: 25rem;
-    height: 100%;
-    opacity: 4%; }
+    opacity: 3%; }
