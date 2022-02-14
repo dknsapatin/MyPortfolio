@@ -63,7 +63,7 @@
     flex-direction: column;
     background-color: inherit;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 8rem 0;
   }
   &__primary {
     font-size: 3.5rem;
@@ -73,16 +73,14 @@
     justify-content: start;
     margin-bottom: 7rem;
     // padding: 2rem;
-    padding-left: 7rem;
     color: #fff;
-    // opacity: 70%;
   }
   &__cards {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
   }
   &__card {
     display: flex;
@@ -92,8 +90,9 @@
 
     border-radius: 2px;
     font-size: 1.6rem;
+    font-weight: 500;
     letter-spacing: 0.8rem;
-    padding: 3rem 3.3rem;
+    padding: 4.7rem 3.8rem;
 
     box-shadow: 0 3rem 5rem rgba(black, 0.15);
     // opacity: 95%;
@@ -105,8 +104,9 @@
       align-items: center;
       margin-bottom: 3rem;
 
-      width: 15rem;
+      width: 16rem;
       height: 100%;
+      z-index: 100;
     }
 
     &:hover {
@@ -126,10 +126,40 @@
 .section-contact {
   .contact {
     &__container {
-      background-color: orangered;
-      padding: 15rem 25rem;
-      margin: 10rem;
-      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.6rem;
+
+      color: #777;
+      border-radius: 2px;
+      box-shadow: 0 3rem 5rem rgba(black, 0.15);
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      margin: 0 auto;
+      padding: 5rem 8rem;
+
+      &-header {
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+
+      &-list {
+        font-size: 2rem;
+        // text-align: center;
+        &--item {
+          list-style: none;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+    &__form {
+      padding: 10rem 15rem;
     }
   }
 }

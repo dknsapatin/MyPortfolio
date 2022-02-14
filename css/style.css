@@ -45,7 +45,7 @@
   flex-direction: column;
   background-color: inherit;
   margin: 0 auto;
-  padding: 5rem 0; }
+  padding: 8rem 0; }
 
 .technologies__primary {
   font-size: 3.5rem;
@@ -53,15 +53,14 @@
   letter-spacing: 0.6rem;
   justify-content: start;
   margin-bottom: 7rem;
-  padding-left: 7rem;
   color: #fff; }
 
 .technologies__cards {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 4rem; }
+  gap: 5rem; }
 
 .technologies__card {
   display: flex;
@@ -70,8 +69,9 @@
   align-items: center;
   border-radius: 2px;
   font-size: 1.6rem;
+  font-weight: 500;
   letter-spacing: 0.8rem;
-  padding: 3rem 3.3rem;
+  padding: 4.7rem 3.8rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   transition: all 0.7s; }
@@ -79,8 +79,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
-    width: 15rem;
-    height: 100%; }
+    width: 16rem;
+    height: 100%;
+    z-index: 100; }
   .technologies__card:hover {
     transform: translateY(-1.5rem) scale(1.02); }
   .technologies__card-description {
@@ -91,10 +92,31 @@
     font-weight: 400; }
 
 .section-contact .contact__container {
-  background-color: orangered;
-  padding: 15rem 25rem;
-  margin: 10rem;
-  color: #fff; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #777;
+  border-radius: 2px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15); }
+
+.section-contact .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 auto;
+  padding: 5rem 8rem; }
+  .section-contact .contact__info-header {
+    text-align: center;
+    padding-bottom: 2rem; }
+  .section-contact .contact__info-list {
+    font-size: 2rem; }
+    .section-contact .contact__info-list--item {
+      list-style: none;
+      padding-bottom: 3rem; }
+
+.section-contact .contact__form {
+  padding: 10rem 15rem; }
 
 .header {
   height: 100vh;
@@ -120,7 +142,7 @@
 .technologies {
   background-image: linear-gradient(to right, #ff99b9, #f3d34a);
   margin: 0 auto;
-  padding: 25rem 25rem; }
+  padding: 20rem 30rem; }
 
 .section-contact {
   margin: 0 auto;
@@ -264,7 +286,7 @@ body {
   .sass .sass__background {
     position: absolute;
     top: 12rem;
-    left: -1.7rem;
+    left: -1.1rem;
     width: 25rem;
     height: 100%;
     opacity: 3%; }
@@ -274,7 +296,7 @@ body {
   overflow: hidden; }
   .react .react__background {
     position: absolute;
-    top: 8rem;
+    top: 9rem;
     left: -10rem;
     width: 25rem;
     height: 100%;
