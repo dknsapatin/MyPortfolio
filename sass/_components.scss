@@ -118,3 +118,15 @@
     }
   }
 }
+
+// Contact Me
+.section-contact {
+  .contact {
+    &__container {
+      background-color: orangered;
+      padding: 15rem 25rem;
+      margin: 10rem;
+      color: #fff;
+    }
+  }
+}

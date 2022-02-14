@@ -47,50 +47,52 @@
 // Top SVG
 .technologies {
   position: relative;
-}
-.custom-shape-divider-top-1644641047 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+
+  .custom-shape-divider-top-1644641047 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1644641047 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 207px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1644641047 .shape-fill {
+    fill: #ffffff;
+  }
+
+  // Bottom SVG
+  .custom-shape-divider-bottom-1644641071 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1644641071 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 207px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1644641071 .shape-fill {
+    fill: #ffffff;
+  }
 }
 
-.custom-shape-divider-top-1644641047 svg {
-  position: relative;
-  display: block;
-  width: calc(125% + 1.3px);
-  height: 207px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1644641047 .shape-fill {
-  fill: #ffffff;
-}
-
-// Bottom SVG
-.custom-shape-divider-bottom-1644641071 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1644641071 svg {
-  position: relative;
-  display: block;
-  width: calc(125% + 1.3px);
-  height: 207px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1644641071 .shape-fill {
-  fill: #ffffff;
-}
 // Technologies Icons
 .technologies-container {
   position: relative;
@@ -110,5 +112,57 @@
     position: absolute;
     top: 9%;
     right: 8%;
+  }
+}
+
+// Technology cards
+.html {
+  position: relative;
+  overflow: hidden;
+
+  .html__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 4%;
+  }
+  .css__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 4%;
+  }
+  .js__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 4%;
+  }
+  .sass__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 4%;
+  }
+  .react__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 4%;
   }
 }
