@@ -95,6 +95,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   font-size: 1.6rem;
   color: #777;
   border-radius: 2px;
@@ -104,16 +105,38 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
   margin: 0 auto;
   padding: 5rem 8rem; }
   .section-contact .contact__info-header {
     text-align: center;
     padding-bottom: 2rem; }
   .section-contact .contact__info-list {
-    font-size: 2rem; }
+    font-size: 2rem;
+    justify-content: start; }
     .section-contact .contact__info-list--item {
       list-style: none;
       padding-bottom: 3rem; }
+
+.section-contact .contact__anchor {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.3rem; }
+  .section-contact .contact__anchor:link, .section-contact .contact__anchor:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem; }
+
+.section-contact .contact__link-details {
+  text-transform: lowercase;
+  color: #777;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding-left: 4rem; }
 
 .section-contact .contact__form {
   padding: 10rem 15rem; }
