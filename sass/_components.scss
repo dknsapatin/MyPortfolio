@@ -130,6 +130,7 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      padding: 0 10rem;
 
       font-size: 1.6rem;
 
@@ -144,11 +145,11 @@
       align-items: center;
 
       margin: 0 auto;
-      padding: 5rem 8rem;
+      padding: 5rem 0;
 
       &-header {
         text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
       }
 
       &-list {

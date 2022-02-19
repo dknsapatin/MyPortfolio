@@ -96,6 +96,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 0 10rem;
   font-size: 1.6rem;
   color: #777;
   border-radius: 2px;
@@ -107,10 +108,10 @@
   justify-content: start;
   align-items: center;
   margin: 0 auto;
-  padding: 5rem 8rem; }
+  padding: 5rem 0; }
   .section-contact .contact__info-header {
     text-align: center;
-    padding-bottom: 2rem; }
+    padding-bottom: 5rem; }
   .section-contact .contact__info-list {
     font-size: 2rem;
     justify-content: start; }
@@ -169,6 +170,7 @@
 
 .section-contact {
   margin: 0 auto;
+  padding: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center; }
