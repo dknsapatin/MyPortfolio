@@ -95,52 +95,60 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 10rem;
+  margin: 0;
   font-size: 1.6rem;
   color: #777;
   border-radius: 2px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
 
 .section-contact .contact__info {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  background-color: #fcfcfc;
   margin: 0 auto;
-  padding: 5rem 0; }
+  padding: 5rem 10rem; }
   .section-contact .contact__info-header {
     text-align: center;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; }
   .section-contact .contact__info-list {
     font-size: 2rem;
     justify-content: start; }
     .section-contact .contact__info-list--item {
       list-style: none;
       padding-bottom: 3rem; }
-
-.section-contact .contact__anchor {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 0.3rem; }
-  .section-contact .contact__anchor:link, .section-contact .contact__anchor:visited {
-    text-transform: uppercase;
-    text-decoration: none;
+  .section-contact .contact__info-anchor {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.3rem; }
+    .section-contact .contact__info-anchor:link, .section-contact .contact__info-anchor:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #777;
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem; }
+  .section-contact .contact__info-link--details {
+    text-transform: lowercase;
     color: #777;
     font-size: 1.5rem;
-    letter-spacing: 0.3rem; }
-
-.section-contact .contact__link-details {
-  text-transform: lowercase;
-  color: #777;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  padding-left: 4rem; }
+    letter-spacing: 0.2rem;
+    padding-left: 4rem; }
 
 .section-contact .contact__form {
-  padding: 10rem 15rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5rem 10rem;
+  background-color: beige; }
+  .section-contact .contact__form-secondary {
+    padding-bottom: 5rem; }
 
 .header {
   height: 100vh;
@@ -157,7 +165,8 @@
   justify-content: center;
   align-items: center;
   color: #777;
-  padding: 0 10rem; }
+  padding: 0 10rem;
+  margin-bottom: -8rem; }
   .section-about__header {
     font-size: 4.5rem;
     text-align: center;
