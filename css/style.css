@@ -93,62 +93,94 @@
 
 .section-contact .contact__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
+  padding: 2rem;
   font-size: 1.6rem;
   color: #777;
   border-radius: 2px;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
-
-.section-contact .contact__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  background-color: #fcfcfc;
-  margin: 0 auto;
-  padding: 5rem 10rem; }
-  .section-contact .contact__info-header {
-    text-align: center;
-    padding-bottom: 5rem;
+  .section-contact .contact__container .contact__header {
     text-transform: uppercase;
-    letter-spacing: 0.2rem; }
-  .section-contact .contact__info-list {
-    font-size: 2rem;
-    justify-content: start; }
-    .section-contact .contact__info-list--item {
-      list-style: none;
-      padding-bottom: 3rem; }
-  .section-contact .contact__info-anchor {
+    padding: 2rem 5rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+    font-weight: 800; }
+  .section-contact .contact__container .contact__leftright {
+    display: flex; }
+  .section-contact .contact__container .contact__info {
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 0.3rem; }
-    .section-contact .contact__info-anchor:link, .section-contact .contact__info-anchor:visited {
+    margin: auto;
+    padding: 5rem 8rem; }
+    .section-contact .contact__container .contact__info-header {
+      text-align: center;
+      padding-bottom: 5rem;
       text-transform: uppercase;
-      text-decoration: none;
+      letter-spacing: 0.2rem; }
+    .section-contact .contact__container .contact__info-list {
+      font-size: 2rem;
+      justify-content: start; }
+      .section-contact .contact__container .contact__info-list--item {
+        list-style: none;
+        padding-bottom: 3rem; }
+    .section-contact .contact__container .contact__info-anchor {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 0.3rem; }
+      .section-contact .contact__container .contact__info-anchor:link, .section-contact .contact__container .contact__info-anchor:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #777;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem; }
+    .section-contact .contact__container .contact__info-link--details {
+      text-transform: lowercase;
       color: #777;
       font-size: 1.5rem;
-      letter-spacing: 0.3rem; }
-  .section-contact .contact__info-link--details {
-    text-transform: lowercase;
-    color: #777;
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    padding-left: 4rem; }
-
-.section-contact .contact__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin: 0 auto;
-  padding: 5rem 10rem;
-  background-color: beige; }
-  .section-contact .contact__form-secondary {
-    padding-bottom: 5rem; }
+      letter-spacing: 0.2rem;
+      padding-left: 4rem; }
+  .section-contact .contact__container .contact__form {
+    margin: 0 auto;
+    padding: 5.5rem 7rem; }
+    .section-contact .contact__container .contact__form-secondary {
+      text-align: center;
+      padding-bottom: 5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem; }
+    .section-contact .contact__container .contact__form-signup {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+      row-gap: 5rem; }
+      .section-contact .contact__container .contact__form-signup label {
+        display: block;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #777;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem; }
+      .section-contact .contact__container .contact__form-signup input,
+      .section-contact .contact__container .contact__form-signup select {
+        color: inherit;
+        width: 80%;
+        padding: 1.2rem;
+        font-size: 1.3rem;
+        font-style: italic;
+        font-family: inherit;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+      .section-contact .contact__container .contact__form-signup__form *:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); }
 
 .header {
   height: 100vh;
@@ -179,7 +211,7 @@
 
 .section-contact {
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 25rem 0;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -199,6 +231,9 @@ body {
   line-height: 1.6;
   background-color: #fff;
   color: #777; }
+
+.btn {
+  margin-top: 1rem; }
 
 .btn-text:link, .btn-text:visited {
   display: inline-block;
