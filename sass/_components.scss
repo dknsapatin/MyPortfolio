@@ -132,7 +132,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 6rem 5rem;
 
     font-size: 1.6rem;
 
@@ -161,7 +161,7 @@
       align-items: center;
 
       margin: auto;
-      padding: 0 8rem;
+      padding: 0 5rem;
 
       &-header {
         text-align: center;
@@ -206,7 +206,7 @@
     // RIGHT SIDE OF CONTACT
     .contact__form {
       margin: 0 auto;
-      padding: 0 7rem;
+      padding: 0 5rem;
 
       &-secondary {
         text-align: center;
@@ -244,7 +244,7 @@
           font-family: inherit;
           border: none;
           border-radius: 1px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
 
         &__form *:focus {

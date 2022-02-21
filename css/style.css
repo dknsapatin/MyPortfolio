@@ -98,7 +98,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 6rem 5rem;
   font-size: 1.6rem;
   color: #777;
   border-radius: 2px;
@@ -118,7 +118,7 @@
     justify-content: start;
     align-items: center;
     margin: auto;
-    padding: 0 8rem; }
+    padding: 0 5rem; }
     .section-contact .contact__container .contact__info-header {
       text-align: center;
       padding-bottom: 5rem;
@@ -150,7 +150,7 @@
       padding-left: 4rem; }
   .section-contact .contact__container .contact__form {
     margin: 0 auto;
-    padding: 0 7rem; }
+    padding: 0 5rem; }
     .section-contact .contact__container .contact__form-secondary {
       text-align: center;
       padding-bottom: 2rem;
@@ -181,7 +181,7 @@
         font-family: inherit;
         border: none;
         border-radius: 1px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
       .section-contact .contact__container .contact__form-signup__form *:focus {
         outline: none;
         box-shadow: 0 0 0 0.3rem rgba(255, 250, 246, 0.5); }
