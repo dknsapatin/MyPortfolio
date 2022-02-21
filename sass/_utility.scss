@@ -1,7 +1,5 @@
 // Button
-.btn {
-  margin-top: 1rem;
-}
+
 .btn-text {
   &:link,
   &:visited {
@@ -188,4 +186,11 @@
     height: 100%;
     opacity: 3%;
   }
+}
+
+.gmail-icon,
+.linkedin-icon,
+.phone-icon {
+  width: 2.5rem;
+  height: 100%;
 }
