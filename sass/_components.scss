@@ -8,8 +8,8 @@
     letter-spacing: 9rem;
     padding: 17.3rem 0 17.3rem 0;
     margin-right: -9rem;
-    // color: #0a0b0a;
-    color: #fff;
+    color: rgb(209, 209, 209);
+    // color: rgb(44, 44, 44);
     opacity: 70%;
     text-align: center;
     margin: auto;
@@ -57,7 +57,6 @@
   &__container {
     display: flex;
     flex-direction: column;
-    background-color: inherit;
     margin: 0 auto;
     padding: 8rem 0;
   }
@@ -67,11 +66,16 @@
     letter-spacing: 0.6rem;
     text-transform: uppercase;
 
-    // text-align: center;
     justify-content: start;
     margin-bottom: 7rem;
-    // padding: 2rem;
+    margin-right: auto;
+
     color: #fff;
+
+    transition: all 0.4s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.02);
+    }
   }
   &__cards {
     margin: 0;
@@ -132,16 +136,18 @@
 
     font-size: 1.6rem;
 
-    color: #777;
-    border-radius: 2px;
-    box-shadow: 0 1rem 3rem rgba(black, 0.15);
+    color: #fff;
+    border-radius: 3px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+    box-shadow: 0 4rem 6rem rgba(black, 0.25);
 
     .contact__header {
       text-transform: uppercase;
       font-size: 3.5rem;
       letter-spacing: 0.6rem;
       font-weight: 800;
-      opacity: 50%;
+      // opacity: 50%;
     }
 
     .contact__leftright {
@@ -158,6 +164,7 @@
 
       margin: auto;
       padding: 0 5rem;
+      color: #fff;
 
       &-header {
         text-align: center;
@@ -185,14 +192,14 @@
         &:visited {
           text-transform: uppercase;
           text-decoration: none;
-          color: #777;
+          color: #fff;
           font-size: 1.5rem;
           letter-spacing: 0.3rem;
         }
       }
       &-link--details {
         text-transform: lowercase;
-        color: #777;
+        color: #fff;
         font-size: 1.5rem;
         letter-spacing: 0.2rem;
         padding-left: 4rem;
@@ -225,7 +232,7 @@
           margin-bottom: 1rem;
           text-transform: uppercase;
           text-decoration: none;
-          color: #777;
+          color: #fff;
           font-size: 1.5rem;
           letter-spacing: 0.3rem;
         }
@@ -276,7 +283,7 @@
           transition: all 2s;
 
           &:hover {
-            background-color: #ffd7d7;
+            background-color: #d3d3d3;
             -webkit-transition: background-color 1000ms linear;
             -ms-transition: background-color 1000ms linear;
             transition: background-color 1000ms linear;

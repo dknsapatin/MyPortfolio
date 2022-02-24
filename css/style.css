@@ -7,7 +7,7 @@
   letter-spacing: 9rem;
   padding: 17.3rem 0 17.3rem 0;
   margin-right: -9rem;
-  color: #fff;
+  color: #d1d1d1;
   opacity: 70%;
   text-align: center;
   margin: auto; }
@@ -41,7 +41,6 @@
 .technologies__container {
   display: flex;
   flex-direction: column;
-  background-color: inherit;
   margin: 0 auto;
   padding: 8rem 0; }
 
@@ -52,7 +51,11 @@
   text-transform: uppercase;
   justify-content: start;
   margin-bottom: 7rem;
-  color: #fff; }
+  margin-right: auto;
+  color: #fff;
+  transition: all 0.4s; }
+  .technologies__primary:hover {
+    transform: translateY(-1.5rem) scale(1.02); }
 
 .technologies__cards {
   margin: 0;
@@ -98,15 +101,15 @@
   margin: 0 auto;
   padding: 6rem 5rem;
   font-size: 1.6rem;
-  color: #777;
-  border-radius: 2px;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); }
+  color: #fff;
+  border-radius: 3px;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.25); }
   .section-contact .contact__container .contact__header {
     text-transform: uppercase;
     font-size: 3.5rem;
     letter-spacing: 0.6rem;
-    font-weight: 800;
-    opacity: 50%; }
+    font-weight: 800; }
   .section-contact .contact__container .contact__leftright {
     display: flex;
     padding-top: 4rem; }
@@ -116,7 +119,8 @@
     justify-content: start;
     align-items: center;
     margin: auto;
-    padding: 0 5rem; }
+    padding: 0 5rem;
+    color: #fff; }
     .section-contact .contact__container .contact__info-header {
       text-align: center;
       padding-bottom: 5rem;
@@ -137,12 +141,12 @@
       .section-contact .contact__container .contact__info-anchor:link, .section-contact .contact__container .contact__info-anchor:visited {
         text-transform: uppercase;
         text-decoration: none;
-        color: #777;
+        color: #fff;
         font-size: 1.5rem;
         letter-spacing: 0.3rem; }
     .section-contact .contact__container .contact__info-link--details {
       text-transform: lowercase;
-      color: #777;
+      color: #fff;
       font-size: 1.5rem;
       letter-spacing: 0.2rem;
       padding-left: 4rem; }
@@ -166,7 +170,7 @@
         margin-bottom: 1rem;
         text-transform: uppercase;
         text-decoration: none;
-        color: #777;
+        color: #fff;
         font-size: 1.5rem;
         letter-spacing: 0.3rem; }
       .section-contact .contact__container .contact__form-signup input,
@@ -204,7 +208,7 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         transition: all 2s; }
         .section-contact .contact__container .contact__form-signup .btn:hover {
-          background-color: #ffd7d7;
+          background-color: #d3d3d3;
           -webkit-transition: background-color 1000ms linear;
           -ms-transition: background-color 1000ms linear;
           transition: background-color 1000ms linear; }
@@ -212,7 +216,7 @@
 .header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom right, #ff6663, #f9c762);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,9 +244,9 @@
     margin-bottom: 3rem; }
 
 .technologies {
-  background-image: linear-gradient(to right, #ff99b9, #f3d34a);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   margin: 0 auto;
-  padding: 20rem 30rem; }
+  padding: 10rem 30rem; }
 
 .section-contact {
   margin: 0 auto;
@@ -282,7 +286,7 @@ body {
   width: 50rem;
   height: 100%;
   font-weight: 100;
-  opacity: 5%;
+  opacity: 7%;
   z-index: -1; }
 
 .section-about {
@@ -300,36 +304,19 @@ body {
 
 .technologies {
   position: relative; }
-  .technologies .custom-shape-divider-top-1644641047 {
+  .technologies .custom-shape-divider-top-1645678340 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0; }
-  .technologies .custom-shape-divider-top-1644641047 svg {
+  .technologies .custom-shape-divider-top-1645678340 svg {
     position: relative;
     display: block;
-    width: calc(125% + 1.3px);
-    height: 207px;
-    transform: rotateY(180deg); }
-  .technologies .custom-shape-divider-top-1644641047 .shape-fill {
-    fill: #ffffff; }
-  .technologies .custom-shape-divider-bottom-1644641071 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg); }
-  .technologies .custom-shape-divider-bottom-1644641071 svg {
-    position: relative;
-    display: block;
-    width: calc(125% + 1.3px);
-    height: 207px;
-    transform: rotateY(180deg); }
-  .technologies .custom-shape-divider-bottom-1644641071 .shape-fill {
+    width: calc(164% + 1.3px);
+    height: 139px; }
+  .technologies .custom-shape-divider-top-1645678340 .shape-fill {
     fill: #ffffff; }
 
 .technologies-container {

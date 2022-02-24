@@ -24,7 +24,7 @@
   width: 50rem;
   height: 100%;
   font-weight: 100;
-  opacity: 5%;
+  opacity: 7%;
   z-index: -1;
 }
 .section-about {
@@ -49,7 +49,7 @@
 .technologies {
   position: relative;
 
-  .custom-shape-divider-top-1644641047 {
+  .custom-shape-divider-top-1645678340 {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,38 +58,14 @@
     line-height: 0;
   }
 
-  .custom-shape-divider-top-1644641047 svg {
+  .custom-shape-divider-top-1645678340 svg {
     position: relative;
     display: block;
-    width: calc(125% + 1.3px);
-    height: 207px;
-    transform: rotateY(180deg);
+    width: calc(164% + 1.3px);
+    height: 139px;
   }
 
-  .custom-shape-divider-top-1644641047 .shape-fill {
-    fill: #ffffff;
-  }
-
-  // Bottom SVG
-  .custom-shape-divider-bottom-1644641071 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .custom-shape-divider-bottom-1644641071 svg {
-    position: relative;
-    display: block;
-    width: calc(125% + 1.3px);
-    height: 207px;
-    transform: rotateY(180deg);
-  }
-
-  .custom-shape-divider-bottom-1644641071 .shape-fill {
+  .custom-shape-divider-top-1645678340 .shape-fill {
     fill: #ffffff;
   }
 }
