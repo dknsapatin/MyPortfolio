@@ -1,44 +1,40 @@
 .header {
   .logo__box {
-    padding: 1rem;
-    margin-bottom: 10rem;
     position: relative;
-    &-name {
-      display: flex;
-      justify-content: center;
-      font-size: 40rem;
-      font-weight: 800;
-      letter-spacing: 9rem;
-      margin-right: -9rem;
-      // color: #0a0b0a;
-      color: #fff;
-      opacity: 70%;
-      text-align: center;
-    }
+    display: flex;
+    justify-content: center;
+    font-size: 40rem;
+    font-weight: 800;
+    letter-spacing: 9rem;
+    padding: 17.3rem 0 17.3rem 0;
+    margin-right: -9rem;
+    // color: #0a0b0a;
+    color: #fff;
+    opacity: 70%;
+    text-align: center;
+    margin: auto;
   }
 }
 
 .section-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  // background-color: #0a0b0a;
-  background-color: #fff;
-  border-bottom: 1px rgb(201, 201, 201) solid;
-
   .nav__links {
     width: 100%;
     display: flex;
-    padding: 2rem;
+    padding: 2.5rem;
     text-transform: uppercase;
     justify-content: space-around;
     list-style: none;
   }
   .nav__item {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 1rem;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 // About ME
@@ -235,6 +231,7 @@
         }
 
         input,
+        textarea,
         select {
           color: inherit;
           width: 90%;
@@ -261,6 +258,10 @@
             height: 75px;
             padding: 12px 20px;
             resize: none;
+
+            &:active {
+              border: none;
+            }
           }
         }
         .btn {

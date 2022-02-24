@@ -1,35 +1,33 @@
 .header .logo__box {
-  padding: 1rem;
-  margin-bottom: 10rem;
-  position: relative; }
-  .header .logo__box-name {
-    display: flex;
-    justify-content: center;
-    font-size: 40rem;
-    font-weight: 800;
-    letter-spacing: 9rem;
-    margin-right: -9rem;
-    color: #fff;
-    opacity: 70%;
-    text-align: center; }
-
-.section-nav {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-size: 40rem;
+  font-weight: 800;
+  letter-spacing: 9rem;
+  padding: 17.3rem 0 17.3rem 0;
+  margin-right: -9rem;
+  color: #fff;
+  opacity: 70%;
+  text-align: center;
+  margin: auto; }
+
+.section-nav .nav__links {
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px #c9c9c9 solid; }
-  .section-nav .nav__links {
-    width: 100%;
-    display: flex;
-    padding: 2rem;
-    text-transform: uppercase;
-    justify-content: space-around;
-    list-style: none; }
-  .section-nav .nav__item {
-    font-size: 1.5rem;
-    letter-spacing: 1rem; }
+  display: flex;
+  padding: 2.5rem;
+  text-transform: uppercase;
+  justify-content: space-around;
+  list-style: none; }
+
+.section-nav .nav__item {
+  font-size: 1.6rem;
+  letter-spacing: 1rem; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .section-about .about-container {
   padding: 0 40rem;
@@ -172,6 +170,7 @@
         font-size: 1.5rem;
         letter-spacing: 0.3rem; }
       .section-contact .contact__container .contact__form-signup input,
+      .section-contact .contact__container .contact__form-signup textarea,
       .section-contact .contact__container .contact__form-signup select {
         color: inherit;
         width: 90%;
@@ -193,6 +192,8 @@
           height: 75px;
           padding: 12px 20px;
           resize: none; }
+          .section-contact .contact__container .contact__form-signup .form-textbox textarea:active {
+            border: none; }
       .section-contact .contact__container .contact__form-signup .btn {
         grid-column: 1 / 4;
         width: 90%;
@@ -211,12 +212,20 @@
 .header {
   height: 100vh;
   width: 100%;
-  margin-bottom: -6rem;
   background-image: linear-gradient(to bottom right, #ff6663, #f9c762);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px #c9c9c9 solid;
+  z-index: 2000; }
 
 .section-about {
   display: flex;
