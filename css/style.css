@@ -40,6 +40,7 @@
     letter-spacing: 0.3rem; }
 
 .technologies__container {
+  max-width: 100%;
   margin: 0 auto;
   padding: 8rem 0; }
 
@@ -56,11 +57,9 @@
     transform: translateY(-1.5rem) scale(1.02); }
 
 .technologies__cards {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5rem; }
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr); }
 
 .technologies__card {
   display: flex;
@@ -70,20 +69,20 @@
   border-radius: 2px;
   font-size: 1.6rem;
   font-weight: 500;
-  letter-spacing: 0.8rem;
-  padding: 4.7rem 3.8rem;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.6rem;
+  padding: 3.2rem 2.8rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  transition: all 0.7s; }
+  transition: all 0.5s; }
   .technologies__card-logo {
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
-    width: 16rem;
+    width: 12rem;
     height: 100%;
     z-index: 100; }
   .technologies__card:hover {
-    transform: translateY(-1.5rem) scale(1.02); }
+    transform: translateY(-0.8rem) scale(1.02); }
   .technologies__card-description {
     justify-content: center;
     font-size: 2rem;
@@ -397,6 +396,17 @@ body {
     position: absolute;
     top: 9rem;
     left: -10rem;
+    width: 25rem;
+    height: 100%;
+    opacity: 3%; }
+
+.tailwind {
+  position: relative;
+  overflow: hidden; }
+  .tailwind .tailwind__background {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
     width: 25rem;
     height: 100%;
     opacity: 3%; }

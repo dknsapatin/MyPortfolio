@@ -60,6 +60,7 @@
 
 .technologies {
   &__container {
+    max-width: 100%;
     margin: 0 auto;
     padding: 8rem 0;
   }
@@ -80,11 +81,15 @@
     }
   }
   &__cards {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    // margin: 0;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // gap: 5rem;
   }
   &__card {
     display: flex;
@@ -95,26 +100,26 @@
     border-radius: 2px;
     font-size: 1.6rem;
     font-weight: 500;
-    letter-spacing: 0.8rem;
-    padding: 4.7rem 3.8rem;
+    letter-spacing: 0.6rem;
+    padding: 3.2rem 2.8rem;
 
-    box-shadow: 0 3rem 5rem rgba(black, 0.15);
+    box-shadow: 0 2rem 5rem rgba(black, 0.15);
     // opacity: 95%;
     background-color: #fff;
-    transition: all 0.7s;
+    transition: all 0.5s;
 
     &-logo {
       justify-content: center;
       align-items: center;
       margin-bottom: 3rem;
 
-      width: 16rem;
+      width: 12rem;
       height: 100%;
       z-index: 100;
     }
 
     &:hover {
-      transform: translateY(-1.5rem) scale(1.02);
+      transform: translateY(-0.8rem) scale(1.02);
     }
     &-description {
       justify-content: center;

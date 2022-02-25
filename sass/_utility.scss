@@ -167,6 +167,19 @@
     opacity: 3%;
   }
 }
+.tailwind {
+  position: relative;
+  overflow: hidden;
+  .tailwind__background {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 3%;
+  }
+}
 
 .gmail-icon,
 .linkedin-icon,
