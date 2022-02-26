@@ -23,6 +23,15 @@
   padding-bottom: 0;
 }
 
+// SMALL TRANSITION WHNEN SCROLLING--------------------
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+// -----------------------------------------------------
 // About Icons
 .style-icons {
   width: 50rem;

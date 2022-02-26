@@ -242,7 +242,6 @@
 
 .section-about {
   display: flex;
-  position: fixed;
   left: 0;
   right: 0;
   margin: 0 auto; }
@@ -253,7 +252,6 @@
 
 .technologies {
   display: flex;
-  position: fixed;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -301,6 +299,13 @@ body {
 
 #zeroPad {
   padding-bottom: 0; }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
+
+.section {
+  transition: transform 1s, opacity 1s; }
 
 .style-icons {
   width: 50rem;
