@@ -40,9 +40,12 @@
     letter-spacing: 0.3rem; }
 
 .technologies__container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 8rem 0; }
+  max-width: 90%;
+  margin: 0 25rem;
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem; }
 
 .technologies__primary {
   font-size: 3.5rem;
@@ -56,39 +59,47 @@
   .technologies__primary:hover {
     transform: translateY(-1.5rem) scale(1.02); }
 
-.technologies__cards {
+.technologies .technologies__cards {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr); }
-
-.technologies__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2px;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0.6rem;
-  padding: 3.2rem 2.8rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
-  transition: all 0.5s; }
-  .technologies__card-logo {
+  grid-template-columns: repeat(4, 1fr); }
+  .technologies .technologies__cards .technologies__card {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
-    width: 12rem;
-    height: 100%;
-    z-index: 100; }
-  .technologies__card:hover {
-    transform: translateY(-0.8rem) scale(1.02); }
-  .technologies__card-description {
-    justify-content: center;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    color: #777;
-    font-weight: 400; }
+    border-radius: 2px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.6rem;
+    padding: 3.5rem 3.2rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: all 0.5s; }
+    .technologies .technologies__cards .technologies__card-logo {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      width: 12rem;
+      height: 100%;
+      z-index: 100; }
+    .technologies .technologies__cards .technologies__card:hover {
+      transform: translateY(-0.8rem) scale(1.02); }
+    .technologies .technologies__cards .technologies__card-description {
+      justify-content: center;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      color: #777;
+      font-weight: 400; }
+
+.technologies .technologies__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 5rem;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  color: #fff; }
 
 .section-contact .contact__container {
   display: flex;
@@ -410,6 +421,32 @@ body {
     width: 25rem;
     height: 100%;
     opacity: 3%; }
+
+.git {
+  position: relative;
+  overflow: hidden; }
+  .git .git__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+    width: 25rem;
+    height: 100%;
+    opacity: 3%; }
+
+.node {
+  position: relative;
+  overflow: hidden;
+  opacity: 40%; }
+  .node .node__background {
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+    width: 25rem;
+    height: 100%;
+    opacity: 3%; }
+
+#noHover:hover {
+  transform: none; }
 
 .gmail-icon,
 .linkedin-icon,

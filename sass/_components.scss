@@ -60,9 +60,13 @@
 
 .technologies {
   &__container {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 0 25rem;
     padding: 8rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
   }
   &__primary {
     font-size: 3.5rem;
@@ -80,54 +84,68 @@
       transform: translateY(-1.5rem) scale(1.02);
     }
   }
-  &__cards {
+
+  // TECHNOLOGIES CARDS GRID
+  .technologies__cards {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     // margin: 0;
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
     // gap: 5rem;
-  }
-  &__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    border-radius: 2px;
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing: 0.6rem;
-    padding: 3.2rem 2.8rem;
-
-    box-shadow: 0 2rem 5rem rgba(black, 0.15);
-    // opacity: 95%;
-    background-color: #fff;
-    transition: all 0.5s;
-
-    &-logo {
+    .technologies__card {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 3rem;
 
-      width: 12rem;
-      height: 100%;
-      z-index: 100;
-    }
+      border-radius: 2px;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.6rem;
+      padding: 3.5rem 3.2rem;
 
-    &:hover {
-      transform: translateY(-0.8rem) scale(1.02);
+      box-shadow: 0 2rem 5rem rgba(black, 0.15);
+      // opacity: 95%;
+      background-color: #fff;
+      transition: all 0.5s;
+
+      &-logo {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        width: 12rem;
+        height: 100%;
+        z-index: 100;
+      }
+
+      &:hover {
+        transform: translateY(-0.8rem) scale(1.02);
+      }
+      &-description {
+        justify-content: center;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        color: #777;
+        font-weight: 400;
+      }
     }
-    &-description {
-      justify-content: center;
-      font-size: 2rem;
-      letter-spacing: 0.2rem;
-      color: #777;
-      font-weight: 400;
-    }
+  }
+  // TECHNOLOGIES DESCRIPTION
+  .technologies__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    color: #fff;
   }
 }
 

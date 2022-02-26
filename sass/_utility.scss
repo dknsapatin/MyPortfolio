@@ -180,6 +180,38 @@
     opacity: 3%;
   }
 }
+.git {
+  position: relative;
+  overflow: hidden;
+  .git__background {
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 3%;
+  }
+}
+.node {
+  position: relative;
+  overflow: hidden;
+  opacity: 40%;
+
+  .node__background {
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+
+    width: 25rem;
+    height: 100%;
+    opacity: 3%;
+  }
+}
+// Nover hover effects | for cards that is still in progress
+#noHover:hover {
+  transform: none;
+}
 
 .gmail-icon,
 .linkedin-icon,
