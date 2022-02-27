@@ -1,55 +1,3 @@
-/////////////////// HEADER  ///////////////////////
-.header {
-  .logo__box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-size: 40rem;
-    font-weight: 800;
-    letter-spacing: 9rem;
-    padding: 17.3rem 0 17.3rem 0;
-    margin-right: -9rem;
-    color: #fff;
-    opacity: 0.7;
-    text-align: center;
-    margin: auto;
-    z-index: 200;
-  }
-}
-
-// Video Section
-
-.bg-video {
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  // z-index: -1;
-  opacity: 0.7;
-
-  &__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.section-nav {
-  .nav__links {
-    width: 100%;
-    display: flex;
-    padding: 2.5rem;
-    text-transform: uppercase;
-    justify-content: space-around;
-    list-style: none;
-  }
-  .nav__item {
-    font-size: 1.6rem;
-    letter-spacing: 1rem;
-  }
-}
 // JS will add/remove sticky based of Observer
 .sticky {
   position: fixed;
@@ -57,291 +5,34 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/////////////////// About ME ///////////////////////
-.section-about {
-  .about-container {
-    margin: 0 auto;
-    max-width: 95rem;
-    align-items: center;
-    padding: 35rem 0;
-
-    // margin-top: 30rem;
-    // margin-bottom: 33rem;
-
-    p {
-      font-size: 1.6rem;
-      padding: 2.25rem;
-      // letter-spacing: 0.3rem;
-
-      letter-spacing: 0.4rem;
-      line-height: 4rem;
-    }
-  }
-}
-
-//////////////// Technologies Section///////////////////
-
-.technologies {
-  &__container {
-    max-width: 90%;
-    margin: 0 25rem;
-    padding: 8rem 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10rem;
-  }
-  &__primary {
-    font-size: 3.5rem;
-    font-weight: 800;
-    letter-spacing: 0.6rem;
+// BUTTONS -------------------------------------------------------
+.btn-text {
+  &:link,
+  &:visited {
+    display: inline-block;
     text-transform: uppercase;
-
-    justify-content: start;
-    margin-bottom: 7rem;
-
-    color: #fff;
-
-    transition: all 0.4s;
-    &:hover {
-      transform: translateY(-1.5rem) scale(1.02);
-    }
+    text-decoration: none;
+    color: #777;
   }
 
-  // TECHNOLOGIES CARDS GRID
-  .technologies__cards {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
-
-    // margin: 0;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // gap: 5rem;
-
-    .technologies__card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      border-radius: 2px;
-      font-size: 1.6rem;
-      font-weight: 500;
-      letter-spacing: 0.6rem;
-      padding: 3.5rem 3.2rem;
-
-      box-shadow: 0 2rem 5rem rgba(black, 0.15);
-      // opacity: 95%;
-      background-color: #fff;
-      transition: all 0.5s;
-
-      &-logo {
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3rem;
-
-        width: 12rem;
-        height: 100%;
-        z-index: 100;
-      }
-
-      &:hover {
-        transform: translateY(-0.8rem) scale(1.02);
-      }
-      &-description {
-        justify-content: center;
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-        color: #777;
-        font-weight: 400;
-      }
-    }
-  }
-  // TECHNOLOGIES DESCRIPTION
-  .technologies__description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10rem 5rem;
-
-    font-size: 2rem;
-    letter-spacing: 0.4rem;
-    color: #fff;
+  &:hover {
+    cursor: pointer;
   }
 }
 
-///////////////////CONTACT SECTION ///////////////////////
+#zeroPad {
+  padding-bottom: 0;
+}
+// Nover hover effects | for cards that is still in progress
+#noHover:hover {
+  transform: none;
+}
 
-.section-contact {
-  .contact__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 6rem 8rem;
-
-    font-size: 1.6rem;
-
-    color: #fff;
-    border-radius: 3px;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-
-    box-shadow: 0 4rem 6rem rgba(black, 0.25);
-
-    .contact__header {
-      text-transform: uppercase;
-      font-size: 3.5rem;
-      letter-spacing: 0.6rem;
-      font-weight: 800;
-    }
-
-    .contact__leftright {
-      display: flex;
-      padding-top: 4rem;
-      gap: 8rem;
-    }
-
-    // LEFT SIDE OF CONTACT
-    .contact__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      margin: auto;
-      padding: 4rem 4rem;
-
-      background-color: #fff;
-      box-shadow: 0 1rem 1rem rgba(black, 0.15);
-      border-radius: 3px;
-
-      &-header {
-        text-align: center;
-        padding-bottom: 5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-      }
-
-      &-list {
-        font-size: 2rem;
-        justify-content: start;
-        // text-align: center;
-        &--item {
-          list-style: none;
-          padding-bottom: 5rem;
-        }
-      }
-
-      &-anchor {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 1.5rem;
-        margin-bottom: 0.3rem;
-        &:link,
-        &:visited {
-          text-transform: uppercase;
-          text-decoration: none;
-          color: #777;
-          font-size: 1.5rem;
-          letter-spacing: 0.3rem;
-        }
-      }
-      &-link--details {
-        text-transform: lowercase;
-        color: #777;
-        font-size: 1.5rem;
-        letter-spacing: 0.2rem;
-        padding-left: 4rem;
-      }
-    }
-
-    // RIGHT SIDE OF CONTACT
-    .contact__form {
-      margin: 0 auto;
-
-      &-secondary {
-        text-align: center;
-        padding-bottom: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-      }
-      &-signup {
-        // display: flex;
-        // flex-direction: column;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 5rem;
-        row-gap: 3rem;
-
-        label {
-          display: block;
-          padding-bottom: 1rem;
-          text-transform: uppercase;
-          text-decoration: none;
-          color: #fff;
-          font-size: 1.5rem;
-          letter-spacing: 0.3rem;
-        }
-
-        input,
-        textarea,
-        select {
-          color: #777;
-          max-width: 100%;
-          padding: 1.2rem;
-          font-size: 1.3rem;
-          font-style: italic;
-          font-family: inherit;
-          border: none;
-          border-radius: 1px;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        }
-
-        &__form *:focus {
-          outline: none;
-        }
-
-        .form-textbox {
-          text-align: center;
-          grid-column: 1 / 3;
-
-          textarea {
-            width: 90%;
-            height: 75px;
-            padding: 12px 20px;
-            resize: none;
-
-            &:active {
-              border: none;
-            }
-          }
-        }
-        .btn {
-          grid-column: 1 / 3;
-          max-width: 100%;
-          height: 5rem;
-          padding: 12px 20px;
-          border: none;
-          background-color: rgb(252, 252, 252);
-          color: #777;
-
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-
-          transition: all 0.3s;
-
-          &:hover {
-            background-color: #ffe388;
-            -webkit-transition: background-color 300ms linear;
-            -ms-transition: background-color 300ms linear;
-            transition: background-color 300ms linear;
-          }
-        }
-      }
-    }
-  }
+// SMALL TRANSITION WHNEN SCROLLING--------------------
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
 }

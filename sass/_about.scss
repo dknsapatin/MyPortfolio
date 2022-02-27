@@ -1,0 +1,41 @@
+/////////////////// About ME ///////////////////////
+.section-about {
+  .about-container {
+    margin: 0 auto;
+    max-width: 95rem;
+    align-items: center;
+    padding: 35rem 0;
+    p {
+      font-size: 1.6rem;
+      padding: 2.25rem;
+      letter-spacing: 0.4rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+// ////////////////////////// ABOUT UTILITIES //////////////////////@at-root
+
+//--------------- About Icons-----------------------
+.style-icons {
+  width: 50rem;
+  height: 100%;
+  font-weight: 100;
+  opacity: 7%;
+  z-index: -1;
+}
+.section-about {
+  position: relative;
+}
+.section-about {
+  .icon-1 {
+    position: absolute;
+    top: -15%;
+    left: 15%;
+  }
+  .icon-2 {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+  }
+}

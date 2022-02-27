@@ -1,63 +1,89 @@
-// Button
+//////////////// Technologies Section///////////////////
 
-.btn-text {
-  &:link,
-  &:visited {
-    display: inline-block;
+.technologies {
+  &__container {
+    max-width: 90%;
+    margin: 0 25rem;
+    padding: 8rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+  }
+  &__primary {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.6rem;
     text-transform: uppercase;
-    text-decoration: none;
-    color: #777;
 
-    /* Button Animations */
+    justify-content: start;
+    margin-bottom: 7rem;
+    color: #fff;
+    transition: all 0.4s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.02);
+    }
   }
+  // TECHNOLOGIES CARDS GRID
+  .technologies__cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
 
-  &:hover {
-    cursor: pointer;
+    .technologies__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    /* When hovering the button */
-    // box-shadow: 0 1rem 2rem rgba(#323031, 0.2);
+      border-radius: 2px;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.6rem;
+      padding: 3.5rem 3.2rem;
+
+      box-shadow: 0 2rem 5rem rgba(black, 0.15);
+      background-color: #fff;
+      transition: all 0.5s;
+
+      &-logo {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        width: 12rem;
+        height: 100%;
+        z-index: 100;
+      }
+
+      &:hover {
+        transform: translateY(-0.8rem) scale(1.02);
+      }
+      &-description {
+        justify-content: center;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        color: #777;
+        font-weight: 400;
+      }
+    }
+  }
+  // TECHNOLOGIES DESCRIPTION
+  .technologies__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    color: #fff;
   }
 }
 
-#zeroPad {
-  padding-bottom: 0;
-}
+// ////////////////////////////////////////////// TECHNOLOGIES UTILITIES //////////////////////////////////
 
-// SMALL TRANSITION WHNEN SCROLLING--------------------
-.section--hidden {
-  opacity: 0;
-  transform: translateY(8rem);
-}
-.section {
-  transition: transform 1s, opacity 1s;
-}
-// -----------------------------------------------------
-// About Icons
-.style-icons {
-  width: 50rem;
-  height: 100%;
-  font-weight: 100;
-  opacity: 7%;
-  z-index: -1;
-}
-.section-about {
-  position: relative;
-}
-.section-about {
-  .icon-1 {
-    position: absolute;
-    top: -15%;
-    left: 15%;
-  }
-
-  .icon-2 {
-    position: absolute;
-    top: 15%;
-    right: 15%;
-  }
-}
-
-// Technologies Section SVG shape divider
+// -----------------------------Technologies Section SVG shape divider----------------------------------------
 // Top SVG
 .technologies {
   position: relative;
@@ -70,20 +96,18 @@
     overflow: hidden;
     line-height: 0;
   }
-
   .custom-shape-divider-top-1645678340 svg {
     position: relative;
     display: block;
     width: calc(164% + 1.3px);
     height: 139px;
   }
-
   .custom-shape-divider-top-1645678340 .shape-fill {
     fill: #ffffff;
   }
 }
 
-// Technologies Icons
+// -------------------------Technologies Icons-------------------------------
 .technologies-container {
   position: relative;
   .tech-icons {
@@ -105,11 +129,10 @@
   }
 }
 
-// Technology cards Background SVG
+// -------------------------Technology cards Background SVG-------------------------------
 .html {
   position: relative;
   overflow: hidden;
-
   .html__background {
     position: absolute;
     top: -8rem;
@@ -120,7 +143,6 @@
     opacity: 3%;
   }
 }
-
 .css {
   position: relative;
   overflow: hidden;
@@ -134,7 +156,6 @@
     opacity: 3%;
   }
 }
-
 .js {
   position: relative;
   overflow: hidden;
@@ -148,7 +169,6 @@
     opacity: 3%;
   }
 }
-
 .sass {
   position: relative;
   overflow: hidden;
@@ -162,7 +182,6 @@
     opacity: 3%;
   }
 }
-
 .react {
   position: relative;
   overflow: hidden;
@@ -216,15 +235,4 @@
     height: 100%;
     opacity: 3%;
   }
-}
-// Nover hover effects | for cards that is still in progress
-#noHover:hover {
-  transform: none;
-}
-
-.gmail-icon,
-.linkedin-icon,
-.phone-icon {
-  width: 2.5rem;
-  height: 100%;
 }
