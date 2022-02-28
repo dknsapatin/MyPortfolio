@@ -13,6 +13,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    transition: all.8s;
 
     &__side {
       height: 52rem;
@@ -35,7 +36,11 @@
         transform: rotateY(180deg);
 
         &-1 {
-          background-image: linear-gradient(to right bottom, #eee, #777);
+          background-image: linear-gradient(
+            to right bottom,
+            #7ed56fd9,
+            rgba(40, 180, 133, 0.85)
+          );
         }
 
         &-2 {
@@ -47,11 +52,14 @@
         }
       }
     }
-    &:hover &__side--front {
+
+    &:hover,
+    &__side--front {
       transform: rotateY(-180deg);
     }
 
-    &:hover &__side--back {
+    &:hover,
+    &__side--back {
       transform: rotateY(0);
     }
 
@@ -64,21 +72,6 @@
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
-
-      &--1 {
-        background-image: linear-gradient(to right bottom, #eee, #777),
-          url(../img/nat-5.jpg);
-      }
-
-      &--2 {
-        background-image: linear-gradient(to right bottom, #eee, #777),
-          url(../img/nat-6.jpg);
-      }
-
-      &--3 {
-        background-image: linear-gradient(to right bottom, #eee, #777),
-          url(../img/nat-7.jpg);
-      }
     }
 
     &__heading {
@@ -101,8 +94,8 @@
       &--1 {
         background-image: linear-gradient(
           to right bottom,
-          rgba(#eee, 0.85),
-          rgba(#777, 0.85)
+          #7ed56fd9,
+          rgba(40, 180, 133, 0.85)
         );
       }
 
@@ -140,10 +133,13 @@
             border-bottom: 1px solid #eee;
           }
         }
+        strong {
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+        }
       }
     }
-
-    // FRONT SIDE STYLING
+    // back SIDE STYLING
     &__cta {
       position: absolute;
       top: 50%;
@@ -164,9 +160,11 @@
       text-transform: uppercase;
     }
 
-    &__price-value {
+    &__price-name {
+      font-family: inherit;
       font-size: 6rem;
       font-weight: 100;
+      letter-spacing: 0.2rem;
     }
   }
 }
