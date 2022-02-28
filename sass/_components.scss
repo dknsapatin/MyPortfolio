@@ -28,11 +28,14 @@
   transform: none;
 }
 
-// SMALL TRANSITION WHNEN SCROLLING--------------------
-.section--hidden {
-  opacity: 0;
-  transform: translateY(8rem);
+// UTILITIES ------------------------------------
+.u-center-text {
+  text-align: center;
+  padding: 10rem;
 }
-.section {
-  transition: transform 1s, opacity 1s;
+
+.u-margin-bottom-big {
+  margin-bottom: 15rem;
 }
+
+// Projects---------------------------------------
