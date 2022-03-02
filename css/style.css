@@ -378,11 +378,11 @@ body {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  margin: 0 auto; }
   .row .col-1-of-3 {
-    margin-right: 3rem; }
+    gap: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
 
 .card {
   perspective: 150rem;
@@ -409,7 +409,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #eee, #777); }
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #eee, #777); }
   .card:hover .card__side--front {
