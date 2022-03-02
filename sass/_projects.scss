@@ -7,91 +7,37 @@
   .col-1-of-3 {
     margin-right: 3rem;
   }
-  .card {
-    // FUNCTIONALITY
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
+}
+
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  transition: all.8s;
+
+  &__side {
     height: 52rem;
-    transition: all.8s;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
-    &__side {
-      height: 52rem;
-      transition: all 0.8s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 3px;
-      overflow: hidden;
-      box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
-
-      &--front {
-        background-color: #fff;
-      }
-
-      &--back {
-        transform: rotateY(180deg);
-
-        &-1 {
-          background-image: linear-gradient(
-            to right bottom,
-            #7ed56fd9,
-            rgba(40, 180, 133, 0.85)
-          );
-        }
-
-        &-2 {
-          background-image: linear-gradient(to right bottom, #eee, #777);
-        }
-
-        &-3 {
-          background-image: linear-gradient(to right bottom, #eee, #777);
-        }
-      }
+    &--front {
+      background-color: #fff;
     }
 
-    &:hover,
-    &__side--front {
-      transform: rotateY(-180deg);
-    }
+    &--back {
+      transform: rotateY(180deg);
 
-    &:hover,
-    &__side--back {
-      transform: rotateY(0);
-    }
-
-    // FRONT SIDE STYLING
-    &__picture {
-      background-size: cover;
-      height: 23rem;
-      background-blend-mode: screen;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-    }
-
-    &__heading {
-      font-size: 2.8rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      text-align: right;
-      color: #fff;
-      position: absolute;
-      top: 12rem;
-      right: 2rem;
-      width: 75%;
-    }
-
-    &__heading-span {
-      padding: 1rem 1.5rem;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-
-      &--1 {
+      &-1 {
         background-image: linear-gradient(
           to right bottom,
           #7ed56fd9,
@@ -99,72 +45,125 @@
         );
       }
 
-      &--2 {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba(#eee, 0.85),
-          rgba(#777, 0.85)
-        );
+      &-2 {
+        background-image: linear-gradient(to right bottom, #eee, #777);
       }
 
-      &--3 {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba(#eee, 0.85),
-          rgba(#777, 0.85)
-        );
+      &-3 {
+        background-image: linear-gradient(to right bottom, #eee, #777);
       }
     }
+  }
 
-    &__details {
-      padding: 3rem;
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
 
-      ul {
-        list-style: none;
-        width: 80%;
-        margin: 0 auto;
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
 
-        li {
-          text-align: center;
-          font-size: 1.5rem;
-          padding: 1rem;
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
 
-          &:not(:last-child) {
-            border-bottom: 1px solid #eee;
-          }
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        #7ed56fd9,
+        rgba(40, 180, 133, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#eee, 0.85),
+        rgba(#777, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#eee, 0.85),
+        rgba(#777, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
         }
-        strong {
-          text-transform: uppercase;
-          letter-spacing: 0.2rem;
-        }
+      }
+      strong {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
       }
     }
-    // back SIDE STYLING
-    &__cta {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      text-align: center;
-    }
+  }
+  // back SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
 
-    &__price-box {
-      text-align: center;
-      color: #fff;
-      margin-bottom: 8rem;
-    }
+  &__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem;
+  }
 
-    &__price-only {
-      font-size: 1.4rem;
-      text-transform: uppercase;
-    }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
 
-    &__price-name {
-      font-family: inherit;
-      font-size: 6rem;
-      font-weight: 100;
-      letter-spacing: 0.2rem;
-    }
+  &__price-name {
+    font-family: inherit;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
   }
 }

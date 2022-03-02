@@ -383,100 +383,101 @@ body {
   grid-template-columns: 1fr 1fr 1fr; }
   .row .col-1-of-3 {
     margin-right: 3rem; }
-  .row .card {
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  transition: all 0.8s; }
+  .card__side {
     height: 52rem;
-    transition: all 0.8s; }
-    .row .card__side {
-      height: 52rem;
-      transition: all 0.8s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 3px;
-      overflow: hidden;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-      .row .card__side--front {
-        background-color: #fff; }
-      .row .card__side--back {
-        transform: rotateY(180deg); }
-        .row .card__side--back-1 {
-          background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
-        .row .card__side--back-2 {
-          background-image: linear-gradient(to right bottom, #eee, #777); }
-        .row .card__side--back-3 {
-          background-image: linear-gradient(to right bottom, #eee, #777); }
-    .row .card:hover, .row .card__side--front {
-      transform: rotateY(-180deg); }
-    .row .card:hover, .row .card__side--back {
-      transform: rotateY(0); }
-    .row .card__picture {
-      background-size: cover;
-      height: 23rem;
-      background-blend-mode: screen;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px; }
-    .row .card__heading {
-      font-size: 2.8rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      text-align: right;
-      color: #fff;
-      position: absolute;
-      top: 12rem;
-      right: 2rem;
-      width: 75%; }
-    .row .card__heading-span {
-      padding: 1rem 1.5rem;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone; }
-      .row .card__heading-span--1 {
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
-      .row .card__heading-span--2 {
-        background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
-      .row .card__heading-span--3 {
-        background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
-    .row .card__details {
-      padding: 3rem; }
-      .row .card__details ul {
-        list-style: none;
-        width: 80%;
-        margin: 0 auto; }
-        .row .card__details ul li {
-          text-align: center;
-          font-size: 1.5rem;
-          padding: 1rem; }
-          .row .card__details ul li:not(:last-child) {
-            border-bottom: 1px solid #eee; }
-        .row .card__details ul strong {
-          text-transform: uppercase;
-          letter-spacing: 0.2rem; }
-    .row .card__cta {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      text-align: center; }
-    .row .card__price-box {
-      text-align: center;
-      color: #fff;
-      margin-bottom: 8rem; }
-    .row .card__price-only {
-      font-size: 1.4rem;
-      text-transform: uppercase; }
-    .row .card__price-name {
-      font-family: inherit;
-      font-size: 6rem;
-      font-weight: 100;
-      letter-spacing: 0.2rem; }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #eee, #777); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #eee, #777); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+      .card__details ul strong {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-name {
+    font-family: inherit;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem; }
 
 .section-contact .contact__container {
   display: flex;
