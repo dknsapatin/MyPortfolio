@@ -86,7 +86,8 @@
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
 
 .section-projects {
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  border-bottom: 0.2px solid #dfdfdf; }
   .section-projects .projects-secondary {
     font-size: 3.2rem;
     font-weight: 100;
@@ -98,7 +99,8 @@
   padding: 15rem 0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #f7f7f7; }
 
 ::root {
   --color-primary: #777;
