@@ -102,6 +102,21 @@
   align-items: center;
   background-color: #f7f7f7; }
 
+/*
+
+0-600px:        Phone
+600-900px:      Tablet Portrait
+900-1200px:     Tablet Landscape
+[1200-1800]:    Normal Size
+1800px + :      Big Desktop
+
+*/
+/* Breakpoint arguement choices:
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+*/
 ::root {
   --color-primary: #777;
   --color-white: #fff; }
@@ -114,6 +129,15 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato", sans-serif;
