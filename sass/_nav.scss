@@ -1,0 +1,14 @@
+.section-nav {
+  .nav__links {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    text-transform: uppercase;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .nav__item {
+    font-size: 1.4rem;
+    letter-spacing: 1rem;
+  }
+}

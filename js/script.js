@@ -18,14 +18,14 @@ const stickyNav = function (entries) {
 // the stickyNav, the root and the threshold of the size
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0,
   rootMargin: `-${navHeight}px`,
+  threshold: 0,
 });
 
 // Observe the header using the header observer that was created
 headerObserver.observe(header);
 
-// --------------------REVEAL All Sections---------------------
+// ------------------REVEAL All Sections---------------------
 const allSections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {

@@ -1,20 +1,13 @@
 // Header section -------------------------------------------
 .header {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
-
+  margin: 0;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 99%);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .section-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
   width: 100%;
 
   background-color: #fff;
@@ -42,7 +35,7 @@
   // position: fixed;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 8rem 0;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
