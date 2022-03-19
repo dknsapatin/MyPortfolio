@@ -475,7 +475,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
+      background-image: linear-gradient(to right bottom, #f6d365, #fda085); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
   .card__details {
