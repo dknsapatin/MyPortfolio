@@ -74,6 +74,8 @@
 
 .technologies {
   display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   right: 0;
   margin: 5rem auto;
@@ -134,14 +136,16 @@ html {
       font-size: 35.25%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 55%; } }
+      font-size: 40%; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-color: #fff;
-  color: #777; }
+  color: #777;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 .header {
   position: relative; }
@@ -156,6 +160,12 @@ body {
     letter-spacing: 9rem;
     color: #fff;
     opacity: 0.7; }
+    @media (max-width: 37.5em) {
+      .header .logo__box {
+        font-size: 25rem;
+        letter-spacing: 1rem;
+        font-family: 3rem;
+        margin-left: 0; } }
 
 .bg-video {
   background-size: cover;
@@ -181,6 +191,10 @@ body {
 .section-nav .nav__item {
   font-size: 1.4rem;
   letter-spacing: 1rem; }
+  @media (max-width: 37.5em) {
+    .section-nav .nav__item {
+      font-size: 1rem;
+      padding: 1rem 0 1rem 0; } }
 
 .section-about .about-container {
   margin: 0 auto;
@@ -192,6 +206,12 @@ body {
     padding: 2.25rem;
     letter-spacing: 0.4rem;
     line-height: 4rem; }
+    @media (max-width: 37.5em) {
+      .section-about .about-container p {
+        font-size: 2rem;
+        padding: 0 15rem;
+        letter-spacing: 0.2rem;
+        line-height: 5rem; } }
 
 .style-icons {
   width: 50rem;
@@ -199,6 +219,13 @@ body {
   font-weight: 100;
   opacity: 7%;
   z-index: -1; }
+  @media (max-width: 37.5em) {
+    .style-icons {
+      width: 30rem;
+      height: 100%;
+      font-weight: 100;
+      opacity: 8%;
+      z-index: -1; } }
 
 .section-about {
   position: relative; }
@@ -207,11 +234,19 @@ body {
   position: absolute;
   top: -15%;
   left: 15%; }
+  @media (max-width: 37.5em) {
+    .section-about .icon-1 {
+      top: -18%;
+      left: 2%; } }
 
 .section-about .icon-2 {
   position: absolute;
   top: 15%;
   right: 15%; }
+  @media (max-width: 37.5em) {
+    .section-about .icon-2 {
+      top: 18%;
+      right: 2%; } }
 
 .technologies__container {
   max-width: 90%;
@@ -220,6 +255,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem; }
+  @media (max-width: 37.5em) {
+    .technologies__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10rem; } }
 
 .technologies__primary {
   font-size: 3.5rem;
@@ -246,7 +286,7 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 0.6rem;
-    padding: 3.5rem 3.2rem;
+    padding: 3rem 8rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
     transition: all 0.5s; }
@@ -274,6 +314,10 @@ body {
   font-size: 2rem;
   letter-spacing: 0.4rem;
   color: #fff; }
+  @media (max-width: 37.5em) {
+    .technologies .technologies__description {
+      font-size: 2.5rem;
+      padding: 0; } }
 
 .technologies {
   position: relative; }
@@ -405,6 +449,11 @@ body {
     gap: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
 
 .card {
   perspective: 150rem;
@@ -412,6 +461,9 @@ body {
   position: relative;
   height: 52rem;
   transition: all 0.8s; }
+  @media (max-width: 37.5em) {
+    .card {
+      width: 40%; } }
   .card__side {
     height: 52rem;
     transition: all 0.8s ease;

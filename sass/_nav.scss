@@ -10,5 +10,10 @@
   .nav__item {
     font-size: 1.4rem;
     letter-spacing: 1rem;
+
+    @include respond(phone) {
+      font-size: 1rem;
+      padding: 1rem 0 1rem 0;
+    }
   }
 }
