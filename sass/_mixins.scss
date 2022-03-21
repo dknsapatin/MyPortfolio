@@ -43,6 +43,13 @@
       @content;
     }
   }
+  @if $breakpoint == big-1440 {
+    @media (min-width: 90em) {
+      //1800px
+      @content;
+    }
+    // Small change for other branch
+  }
   // Breakpoint for big desktop
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {

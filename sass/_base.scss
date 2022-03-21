@@ -32,9 +32,11 @@ html {
   @include respond(tab-land) {
     font-size: 35.25%;
   }
-
+  @include respond(big-1440) {
+    font-size: 50%;
+  }
   @include respond(big-desktop) {
-    font-size: 60%;
+    font-size: 65%;
   }
 }
 body {
