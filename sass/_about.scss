@@ -39,6 +39,14 @@
     opacity: 8%;
     z-index: -1;
   }
+
+  @include respond(tab-land) {
+    width: 30rem;
+    height: 100%;
+    font-weight: 100;
+    opacity: 8%;
+    z-index: -1;
+  }
 }
 .section-about {
   position: relative;
@@ -52,6 +60,10 @@
       top: -18%;
       left: 2%;
     }
+    @include respond(tab-land) {
+      top: -18%;
+      left: 10%;
+    }
   }
   .icon-2 {
     position: absolute;
@@ -60,6 +72,10 @@
     @include respond(phone) {
       top: 18%;
       right: 2%;
+    }
+    @include respond(tab-land) {
+      top: 18%;
+      right: 10%;
     }
   }
 }

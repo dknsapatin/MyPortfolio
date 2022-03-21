@@ -26,12 +26,15 @@ html {
   @include respond(tab-port) {
     font-size: 30%;
   }
+  @include respond(tab-med) {
+    font-size: 32.25%;
+  }
   @include respond(tab-land) {
     font-size: 35.25%;
   }
 
   @include respond(big-desktop) {
-    font-size: 40%;
+    font-size: 60%;
   }
 }
 body {

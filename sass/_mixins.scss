@@ -25,8 +25,14 @@
   }
   // Breakpoint for tablet portrait
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 53.75em) {
       //800px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-med {
+    @media (max-width: 62.75em) {
+      //1004px
       @content;
     }
   }

@@ -15,6 +15,11 @@
       grid-template-columns: 1fr;
       gap: 10rem;
     }
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10rem;
+    }
   }
   &__primary {
     font-size: 3.5rem;
@@ -87,6 +92,11 @@
 
     @include respond(phone) {
       font-size: 2.5rem;
+      padding: 0;
+    }
+    @include respond(tab-med) {
+      font-size: 2rem;
+
       padding: 0;
     }
   }

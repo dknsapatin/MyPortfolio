@@ -128,15 +128,18 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 53.75em) {
     html {
       font-size: 30%; } }
+  @media (max-width: 62.75em) {
+    html {
+      font-size: 32.25%; } }
   @media (max-width: 75em) {
     html {
       font-size: 35.25%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 40%; } }
+      font-size: 60%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -162,7 +165,13 @@ body {
     opacity: 0.7; }
     @media (max-width: 37.5em) {
       .header .logo__box {
-        font-size: 25rem;
+        font-size: 20rem;
+        letter-spacing: 1rem;
+        font-family: 3rem;
+        margin-left: 0; } }
+    @media (max-width: 53.75em) {
+      .header .logo__box {
+        font-size: 35rem;
         letter-spacing: 1rem;
         font-family: 3rem;
         margin-left: 0; } }
@@ -226,6 +235,13 @@ body {
       font-weight: 100;
       opacity: 8%;
       z-index: -1; } }
+  @media (max-width: 75em) {
+    .style-icons {
+      width: 30rem;
+      height: 100%;
+      font-weight: 100;
+      opacity: 8%;
+      z-index: -1; } }
 
 .section-about {
   position: relative; }
@@ -238,6 +254,10 @@ body {
     .section-about .icon-1 {
       top: -18%;
       left: 2%; } }
+  @media (max-width: 75em) {
+    .section-about .icon-1 {
+      top: -18%;
+      left: 10%; } }
 
 .section-about .icon-2 {
   position: absolute;
@@ -247,6 +267,10 @@ body {
     .section-about .icon-2 {
       top: 18%;
       right: 2%; } }
+  @media (max-width: 75em) {
+    .section-about .icon-2 {
+      top: 18%;
+      right: 10%; } }
 
 .technologies__container {
   max-width: 90%;
@@ -256,6 +280,11 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 10rem; }
   @media (max-width: 37.5em) {
+    .technologies__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10rem; } }
+  @media (max-width: 53.75em) {
     .technologies__container {
       display: grid;
       grid-template-columns: 1fr;
@@ -317,6 +346,10 @@ body {
   @media (max-width: 37.5em) {
     .technologies .technologies__description {
       font-size: 2.5rem;
+      padding: 0; } }
+  @media (max-width: 62.75em) {
+    .technologies .technologies__description {
+      font-size: 2rem;
       padding: 0; } }
 
 .technologies {

@@ -15,7 +15,13 @@
     opacity: 0.7;
 
     @include respond(phone) {
-      font-size: 25rem;
+      font-size: 20rem;
+      letter-spacing: 1rem;
+      font-family: 3rem;
+      margin-left: 0;
+    }
+    @include respond(tab-port) {
+      font-size: 35rem;
       letter-spacing: 1rem;
       font-family: 3rem;
       margin-left: 0;
