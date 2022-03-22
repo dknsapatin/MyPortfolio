@@ -31,7 +31,7 @@
     }
   }
   @if $breakpoint == tab-med {
-    @media (max-width: 62.75em) {
+    @media (max-width: 48em) {
       //1004px
       @content;
     }

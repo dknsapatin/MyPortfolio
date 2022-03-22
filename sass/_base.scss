@@ -33,7 +33,7 @@ html {
     font-size: 35.25%;
   }
   @include respond(big-1440) {
-    font-size: 50%;
+    font-size: 40%;
   }
   @include respond(big-desktop) {
     font-size: 65%;
