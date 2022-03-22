@@ -20,23 +20,21 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  // @include respond(phone) {
-  //   font-size: 50%;
-  // }
+
+  @include respond(phone) {
+    font-size: 25%;
+  }
   @include respond(tab-port) {
     font-size: 30%;
   }
   @include respond(tab-med) {
-    font-size: 32.25%;
+    font-size: 38%;
   }
   @include respond(tab-land) {
     font-size: 35.25%;
   }
-  @include respond(big-1440) {
-    font-size: 40%;
-  }
   @include respond(big-desktop) {
-    font-size: 65%;
+    font-size: 55%;
   }
 }
 body {
