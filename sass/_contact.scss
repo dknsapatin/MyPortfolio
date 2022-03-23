@@ -16,17 +16,28 @@
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     box-shadow: 0 4rem 6rem rgba(black, 0.25);
 
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+
     .contact__header {
       text-transform: uppercase;
       font-size: 3.5rem;
       letter-spacing: 0.6rem;
       font-weight: 800;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
     }
 
     .contact__leftright {
       display: flex;
       padding-top: 4rem;
       gap: 8rem;
+      @include respond(phone) {
+        flex-direction: column;
+      }
     }
     // LEFT SIDE OF CONTACT-----------------------------------------------------
     .contact__info {
@@ -97,6 +108,11 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 5rem;
         row-gap: 3rem;
+
+        @include respond(phone) {
+          justify-content: center;
+          align-items: center;
+        }
         label {
           display: block;
           padding-bottom: 1rem;
@@ -118,6 +134,11 @@
           border: none;
           border-radius: 1px;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          @include respond(phone) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
         }
         &__form *:focus {
           outline: none;
@@ -132,6 +153,10 @@
             resize: none;
             &:active {
               border: none;
+            }
+
+            @include respond(phone) {
+              padding: 3rem 2rem;
             }
           }
         }
@@ -151,6 +176,10 @@
             -webkit-transition: background-color 300ms linear;
             -ms-transition: background-color 300ms linear;
             transition: background-color 300ms linear;
+          }
+
+          @include respond(phone) {
+            padding: 1rem 0 1rem 0;
           }
         }
       }
