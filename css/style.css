@@ -546,12 +546,16 @@ body {
       background-color: #fff; }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back-1 {
+      .card__side--back-jckt {
+        background-image: linear-gradient(to right bottom, #e6e3db, #beb7a4); }
+      .card__side--back-mapty {
         background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
-      .card__side--back-2 {
+      .card__side--back-forkify {
         background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #eee, #777); }
+      .card__side--back-vuepoint {
+        background-image: linear-gradient(to right bottom, #fbdae0, #82a7a6); }
+      .card__side--back-weatherwatch {
+        background-image: linear-gradient(to right bottom, #69a7b5, #2f5760); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -590,12 +594,16 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--1 {
+    .card__heading-span--jckt {
+      background-image: linear-gradient(to right bottom, #e6e3db, #beb7a4c8); }
+    .card__heading-span--mapty {
       background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, #f6d365, #fda085); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.85), rgba(119, 119, 119, 0.85)); }
+    .card__heading-span--forkify {
+      background-image: linear-gradient(to right bottom, #f6d365, #fd9f85cc); }
+    .card__heading-span--vuepoint {
+      background-image: linear-gradient(to right bottom, #fbdae0, #82a7a6); }
+    .card__heading-span--weatherwatch {
+      background-image: linear-gradient(to right bottom, #69a7b5cd, #2f5760e4); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -627,9 +635,10 @@ body {
     text-transform: uppercase; }
   .card__price-name {
     font-family: inherit;
-    font-size: 6rem;
+    font-size: 4.5rem;
+    padding: 0 1rem;
     font-weight: 100;
-    letter-spacing: 0.2rem; }
+    letter-spacing: 0.1rem; }
 
 .section-contact .contact__container {
   display: flex;

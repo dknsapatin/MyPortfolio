@@ -21,7 +21,7 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  transition: all.8s;
+  transition: all 0.8s;
 
   @include respond(phone) {
     width: 40%;
@@ -47,7 +47,11 @@
     &--back {
       transform: rotateY(180deg);
 
-      &-1 {
+      &-jckt {
+        background-image: linear-gradient(to right bottom, #e6e3db, #beb7a4);
+      }
+
+      &-mapty {
         background-image: linear-gradient(
           to right bottom,
           #7ed56fd9,
@@ -55,12 +59,15 @@
         );
       }
 
-      &-2 {
+      &-forkify {
         background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
       }
 
-      &-3 {
-        background-image: linear-gradient(to right bottom, #eee, #777);
+      &-vuepoint {
+        background-image: linear-gradient(to right bottom, #fbdae0, #82a7a6);
+      }
+      &-weatherwatch {
+        background-image: linear-gradient(to right bottom, #69a7b5, #2f5760);
       }
     }
   }
@@ -118,7 +125,11 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
-    &--1 {
+    &--jckt {
+      background-image: linear-gradient(to right bottom, #e6e3db, #beb7a4c8);
+    }
+
+    &--mapty {
       background-image: linear-gradient(
         to right bottom,
         #7ed56fd9,
@@ -126,16 +137,16 @@
       );
     }
 
-    &--2 {
-      background-image: linear-gradient(to right bottom, #f6d365, #fda085);
+    &--forkify {
+      background-image: linear-gradient(to right bottom, #f6d365, #fd9f85cc);
     }
 
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(#eee, 0.85),
-        rgba(#777, 0.85)
-      );
+    &--vuepoint {
+      background-image: linear-gradient(to right bottom, #fbdae0, #82a7a6);
+    }
+
+    &--weatherwatch {
+      background-image: linear-gradient(to right bottom, #69a7b5cd, #2f5760e4);
     }
   }
 
@@ -185,8 +196,9 @@
 
   &__price-name {
     font-family: inherit;
-    font-size: 6rem;
+    font-size: 4.5rem;
+    padding: 0 1rem;
     font-weight: 100;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
   }
 }
