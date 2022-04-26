@@ -38,13 +38,13 @@
   // position: fixed;
   left: 0;
   right: 0;
-  margin: 5rem auto;
+  margin: 0rem auto;
   padding: 8rem 0;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .section-projects {
-  margin-top: 10rem;
+  margin-top: 8rem;
   border-bottom: 0.2px solid rgb(223, 223, 223);
 
   .projects-secondary {
@@ -58,7 +58,7 @@
 // Contact section -------------------------------------------
 .section-contact {
   margin: 0 auto;
-  padding: 15rem 0;
+  padding: 12rem 0;
   display: flex;
   justify-content: center;
   align-items: center;

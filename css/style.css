@@ -78,12 +78,12 @@
   align-items: center;
   left: 0;
   right: 0;
-  margin: 5rem auto;
+  margin: 0rem auto;
   padding: 8rem 0;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
 
 .section-projects {
-  margin-top: 10rem;
+  margin-top: 8rem;
   border-bottom: 0.2px solid #dfdfdf; }
   .section-projects .projects-secondary {
     font-size: 3.2rem;
@@ -93,7 +93,7 @@
 
 .section-contact {
   margin: 0 auto;
-  padding: 15rem 0;
+  padding: 12rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +215,7 @@ body {
   margin: 0 auto;
   max-width: 95rem;
   align-items: center;
-  padding: 35rem 0; }
+  padding: 15rem 0; }
   .section-about .about-container p {
     font-size: 1.6rem;
     padding: 2.25rem;
@@ -299,7 +299,7 @@ body {
 .technologies__container {
   max-width: 90%;
   margin: 0 25rem;
-  padding: 8rem 0;
+  padding: 5rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem; }
