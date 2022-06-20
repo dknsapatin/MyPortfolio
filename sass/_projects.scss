@@ -48,15 +48,11 @@
       transform: rotateY(180deg);
 
       &-jckt {
-        background-image: linear-gradient(to right bottom, #efede6, #beb7a4);
+        background-image: linear-gradient(to right bottom, #fb4b4e, #fb4b4e);
       }
 
       &-mapty {
-        background-image: linear-gradient(
-          to right bottom,
-          #7ed56fd9,
-          rgba(40, 180, 133, 0.85)
-        );
+        background-image: linear-gradient(to right bottom, #f4e3b2, #fff275);
       }
 
       &-forkify {
@@ -68,6 +64,13 @@
       }
       &-weatherwatch {
         background-image: linear-gradient(to right bottom, #69a7b5, #2f5760);
+      }
+      &-natours {
+        background-image: linear-gradient(
+          to right bottom,
+          #7ed56fd9,
+          rgba(40, 180, 133, 0.85)
+        );
       }
     }
   }
@@ -126,15 +129,11 @@
     box-decoration-break: clone;
 
     &--jckt {
-      background-image: linear-gradient(to right bottom, #efede6, #beb7a4c8);
+      background-image: linear-gradient(to right bottom, #fb4b4ea1, #fb4b4e);
     }
 
     &--mapty {
-      background-image: linear-gradient(
-        to right bottom,
-        #7ed56fd9,
-        rgba(40, 180, 133, 0.85)
-      );
+      background-image: linear-gradient(to right bottom, #f4e4b2ac, #fff275);
     }
 
     &--forkify {
@@ -147,6 +146,13 @@
 
     &--weatherwatch {
       background-image: linear-gradient(to right bottom, #69a7b5cd, #2f5760e4);
+    }
+    &--natours {
+      background-image: linear-gradient(
+        to right bottom,
+        #7ed56fd9,
+        rgba(40, 180, 133, 0.85)
+      );
     }
   }
 

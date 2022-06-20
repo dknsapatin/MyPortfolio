@@ -498,8 +498,7 @@ body {
 
 .node {
   position: relative;
-  overflow: hidden;
-  opacity: 40%; }
+  overflow: hidden; }
   .node .node__background {
     position: absolute;
     top: 10rem;
@@ -547,15 +546,17 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-jckt {
-        background-image: linear-gradient(to right bottom, #efede6, #beb7a4); }
+        background-image: linear-gradient(to right bottom, #fb4b4e, #fb4b4e); }
       .card__side--back-mapty {
-        background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
+        background-image: linear-gradient(to right bottom, #f4e3b2, #fff275); }
       .card__side--back-forkify {
         background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
       .card__side--back-vuepoint {
         background-image: linear-gradient(to right bottom, #fbdae0, #9b6a6c); }
       .card__side--back-weatherwatch {
         background-image: linear-gradient(to right bottom, #69a7b5, #2f5760); }
+      .card__side--back-natours {
+        background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -595,15 +596,17 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--jckt {
-      background-image: linear-gradient(to right bottom, #efede6, #beb7a4c8); }
+      background-image: linear-gradient(to right bottom, #fb4b4ea1, #fb4b4e); }
     .card__heading-span--mapty {
-      background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, #f4e4b2ac, #fff275); }
     .card__heading-span--forkify {
       background-image: linear-gradient(to right bottom, #f6d365, #fd9f85cc); }
     .card__heading-span--vuepoint {
       background-image: linear-gradient(to right bottom, #fbdae0, #9b6a6cbf); }
     .card__heading-span--weatherwatch {
       background-image: linear-gradient(to right bottom, #69a7b5cd, #2f5760e4); }
+    .card__heading-span--natours {
+      background-image: linear-gradient(to right bottom, #7ed56fd9, rgba(40, 180, 133, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
